@@ -139,7 +139,7 @@
        _Commit: `fix: global accessibility improvements from axe-core audit`_
 - [x] **Task 5.2**: Keyboard navigation audit — verify every component works keyboard-only  
        _Commit: `fix: refine keyboard navigation across library components`_
-- [ ] **Task 5.3**: Add Storybook a11y addon + configure global panel  
+- [x] **Task 5.3**: Add Storybook a11y addon + configure global panel  
        _Commit: `chore: integrate Storybook a11y addon`_
 
 ---
@@ -206,9 +206,9 @@
 | 2. Design Tokens   | 5      | 5      |
 | 3. Core Infra      | 4      | 4      |
 | 4. Components      | 32     | 18     |
-| 5. A11y Audit      | 3      | 2      |
+| 5. A11y Audit      | 3      | 3      |
 | 6. Storybook Docs  | 5      | 0      |
 | 7. Build & Package | 4      | 0      |
 | 8. CI/CD           | 3      | 0      |
 | 9. Release         | 5      | 0      |
-| **Total**          | **65** | **33** |
+| **Total**          | **65** | **34** |
