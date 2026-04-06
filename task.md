@@ -167,7 +167,7 @@
        _Commit: `chore: finalize package.json exports mapping and dependencies`_
 - [x] **Task 7.3**: Build `src/index.js` barrel export — public API surface  
        _Commit: `feat: expose library API via root barrel file`_
-- [ ] **Task 7.4**: Bundle size check script + budget enforcement  
+- [x] **Task 7.4**: Bundle size check script + budget enforcement  
        _Commit: `build: implement automated bundle size budgeting scripts`_
 
 ---
@@ -208,7 +208,7 @@
 | 4. Components      | 32     | 18     |
 | 5. A11y Audit      | 3      | 3      |
 | 6. Storybook Docs  | 5      | 5      |
-| 7. Build & Package | 4      | 3      |
+| 7. Build & Package | 4      | 4      |
 | 8. CI/CD           | 3      | 0      |
 | 9. Release         | 5      | 0      |
-| **Total**          | **65** | **42** |
+| **Total**          | **65** | **43** |
