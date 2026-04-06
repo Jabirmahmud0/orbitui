@@ -33,7 +33,7 @@
        _Commit: `feat: generate light and dark semantic themes`_
 - [x] **Task 2.3**: Create brand override tokens (brand-a + brand-b)  
        _Commit: `feat: implement multi-brand token overrides`_
-- [ ] **Task 2.4**: Configure Style Dictionary — build pipeline + generated outputs  
+- [x] **Task 2.4**: Configure Style Dictionary — build pipeline + generated outputs  
        _Commit: `build: setup Style Dictionary for token transformation`_
 - [ ] **Task 2.5**: Wire generated CSS variables into Tailwind v4 config  
        _Commit: `feat: integrate JS and CSS tokens into Tailwind config`_
@@ -203,7 +203,7 @@
 | Phase              | Tasks  | Done  |
 | ------------------ | ------ | ----- |
 | 1. Scaffolding     | 4      | 4     |
-| 2. Design Tokens   | 5      | 3     |
+| 2. Design Tokens   | 5      | 4     |
 | 3. Core Infra      | 4      | 0     |
 | 4. Components      | 32     | 0     |
 | 5. A11y Audit      | 3      | 0     |
@@ -211,4 +211,4 @@
 | 7. Build & Package | 4      | 0     |
 | 8. CI/CD           | 3      | 0     |
 | 9. Release         | 5      | 0     |
-| **Total**          | **65** | **7** |
+| **Total**          | **65** | **8** |
