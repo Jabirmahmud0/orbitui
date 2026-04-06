@@ -146,7 +146,7 @@
 
 ## Phase 6 — Storybook Documentation Site
 
-- [ ] **Task 6.1**: Configure Storybook 8 — main.js, preview.js, theme switcher  
+- [x] **Task 6.1**: Configure Storybook 8 — main.js, preview.js, theme switcher  
        _Commit: `docs: initialize Storybook and setup global previews`_
 - [ ] **Task 6.2**: Write MDX docs — Introduction, Installation, Getting Started  
        _Commit: `docs: write core documentation pages (Intro, Install)`_
@@ -207,8 +207,8 @@
 | 3. Core Infra      | 4      | 4      |
 | 4. Components      | 32     | 18     |
 | 5. A11y Audit      | 3      | 3      |
-| 6. Storybook Docs  | 5      | 0      |
+| 6. Storybook Docs  | 5      | 1      |
 | 7. Build & Package | 4      | 0      |
 | 8. CI/CD           | 3      | 0      |
 | 9. Release         | 5      | 0      |
-| **Total**          | **65** | **34** |
+| **Total**          | **65** | **35** |
