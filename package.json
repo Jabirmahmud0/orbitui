@@ -69,6 +69,7 @@
   },
   "dependencies": {
     "clsx": "^2.1.1",
+    "react-aria": "^3.47.0",
     "tailwind-merge": "^3.5.0"
   }
 }
