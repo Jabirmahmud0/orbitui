@@ -27,6 +27,10 @@
       "import": "./dist/components/Input/Input.js",
       "require": "./dist/components/Input/Input.cjs"
     },
+    "./components/Modal": {
+      "import": "./dist/components/Modal/Modal.js",
+      "require": "./dist/components/Modal/Modal.cjs"
+    },
     "./components/Pagination": {
       "import": "./dist/components/Pagination/Pagination.js",
       "require": "./dist/components/Pagination/Pagination.cjs"

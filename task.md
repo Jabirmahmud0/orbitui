@@ -99,7 +99,7 @@
 
 ### Tier 3 — Overlay Components
 
-- [ ] **Task 4.19**: Modal/Dialog — compound, focus trap, scroll lock, sizes  
+- [x] **Task 4.19**: Modal/Dialog — compound, focus trap, scroll lock, sizes  
        _Commit: `feat: implement Modal/Dialog with focus trapping`_
 - [ ] **Task 4.20**: Modal/Dialog — stories + unit tests + a11y tests  
        _Commit: `test: add stories and unit tests for Modal`_
@@ -205,10 +205,10 @@
 | 1. Scaffolding     | 4      | 4      |
 | 2. Design Tokens   | 5      | 5      |
 | 3. Core Infra      | 4      | 4      |
-| 4. Components      | 32     | 18     |
+| 4. Components      | 32     | 19     |
 | 5. A11y Audit      | 3      | 3      |
 | 6. Storybook Docs  | 5      | 5      |
 | 7. Build & Package | 4      | 4      |
 | 8. CI/CD           | 3      | 3      |
 | 9. Release         | 5      | 3      |
-| **Total**          | **65** | **49** |
+| **Total**          | **65** | **50** |
