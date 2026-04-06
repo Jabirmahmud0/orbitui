@@ -27,6 +27,10 @@
       "import": "./dist/components/Combobox/Combobox.js",
       "require": "./dist/components/Combobox/Combobox.cjs"
     },
+    "./components/CommandPalette": {
+      "import": "./dist/components/CommandPalette/CommandPalette.js",
+      "require": "./dist/components/CommandPalette/CommandPalette.cjs"
+    },
     "./components/DataTable": {
       "import": "./dist/components/DataTable/DataTable.js",
       "require": "./dist/components/DataTable/DataTable.cjs"
@@ -207,6 +211,7 @@
     "access": "public"
   }
 }
+
 
 
 

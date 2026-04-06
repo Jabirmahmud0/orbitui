@@ -4,6 +4,7 @@ export const orbitUiVersion = '0.1.0';
 export { Breadcrumbs, BreadcrumbsItem } from './components/Breadcrumbs';
 export { Button } from './components/Button';
 export { Checkbox } from './components/Checkbox';
+export { CommandPalette } from './components/CommandPalette';
 export { Combobox } from './components/Combobox';
 export { DataTable } from './components/DataTable';
 export {
@@ -52,4 +53,5 @@ export { createPolymorphicComponent } from './utils/polymorphic';
 
 // Generated tokens
 export { default as orbitTokens } from './tokens/generated/tokens';
+
 
