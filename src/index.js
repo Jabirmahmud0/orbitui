@@ -28,6 +28,7 @@ export {
 } from './components/Modal';
 export { Pagination } from './components/Pagination';
 export { RadioGroup, RadioGroupItem } from './components/RadioGroup';
+export { Select } from './components/Select';
 export { Tabs, TabsContent, TabsList, TabsTrigger } from './components/Tabs';
 export { Textarea } from './components/Textarea';
 export { Tooltip } from './components/Tooltip';

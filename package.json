@@ -31,6 +31,10 @@
       "import": "./dist/components/Input/Input.js",
       "require": "./dist/components/Input/Input.cjs"
     },
+    "./components/Select": {
+      "import": "./dist/components/Select/Select.js",
+      "require": "./dist/components/Select/Select.cjs"
+    },
     "./components/Modal": {
       "import": "./dist/components/Modal/Modal.js",
       "require": "./dist/components/Modal/Modal.cjs"
@@ -191,3 +195,4 @@
     "access": "public"
   }
 }
+
