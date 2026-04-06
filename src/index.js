@@ -4,6 +4,15 @@ export const orbitUiVersion = '0.1.0';
 export { Breadcrumbs, BreadcrumbsItem } from './components/Breadcrumbs';
 export { Button } from './components/Button';
 export { Checkbox } from './components/Checkbox';
+export {
+  Dropdown,
+  DropdownContent,
+  DropdownItem,
+  DropdownLabel,
+  DropdownSection,
+  DropdownSeparator,
+  DropdownTrigger,
+} from './components/Dropdown';
 export { Input } from './components/Input';
 export {
   Dialog,
