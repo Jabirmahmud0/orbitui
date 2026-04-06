@@ -1,0 +1,71 @@
+import { Meta } from '@storybook/addon-docs/blocks';
+
+<Meta title="Accessibility" />
+
+# Accessibility
+
+OrbitUI treats accessibility as a default requirement, not a follow-up polish pass. Components are built and audited around semantic roles, keyboard interaction, visible focus, and automated regression checks.
+
+## Current coverage
+
+The library currently runs two cross-library audit suites:
+
+- `src/test/accessibility.audit.test.jsx`: axe-core verification for each shipped component
+- `src/test/keyboard.audit.test.jsx`: keyboard-only interaction checks for activation, navigation, and focus movement
+
+The audited component set currently includes:
+
+- Button
+- Input
+- Textarea
+- Checkbox
+- RadioGroup
+- Tooltip
+- Tabs
+- Breadcrumbs
+- Pagination
+
+## Built-in expectations
+
+When adding or consuming OrbitUI components, the baseline expectation is:
+
+- interactive elements expose the correct ARIA role or semantic HTML element
+- focus remains visible and keyboard reachable
+- labels, helper text, and state descriptions remain programmatically associated
+- overlays and compound components keep predictable keyboard behavior
+
+## Keyboard patterns
+
+OrbitUI�s current interaction model covers the expected keyboard behaviors for shipped components:
+
+- `Button`: Enter and Space trigger press
+- `Checkbox`: Space toggles state
+- `RadioGroup`: arrow keys move selection
+- `Tabs`: arrow keys move active tab focus and selection
+- `Tooltip`: focus-triggered content can be revealed from the keyboard
+- `Pagination`: controls can be reached and activated without a pointer
+
+## Testing workflow
+
+Use these commands while building components or extending docs:
+
+```bash
+npm run test
+npm run storybook:build
+```
+
+The test suite includes Testing Library, `vitest-axe`, and user-event driven keyboard coverage.
+
+## Authoring guidance
+
+When implementing new components for OrbitUI, keep the same bar:
+
+- choose semantic HTML before adding ARIA manually
+- expose labels through visible text or explicit labeling props
+- support tab order and component-specific arrow-key patterns where the pattern requires it
+- preserve readable contrast across both light and dark semantic themes
+- add both axe coverage and keyboard regression tests before considering the component done
+
+## Storybook usage
+
+The Storybook workspace includes the accessibility addon and global theme controls, so you can inspect components under different visual contexts while keeping the same interaction contract.

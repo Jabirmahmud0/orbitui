@@ -1,0 +1,86 @@
+import { Meta } from '@storybook/addon-docs/blocks';
+
+<Meta title="Theming" />
+
+# Theming
+
+OrbitUI themes the component tree through `OrbitProvider`. The provider applies `data-theme`, `data-brand`, and optional inline CSS variables so every component reads from the same token contract.
+
+## Provider API
+
+```jsx
+import { OrbitProvider } from '@orbitui/react';
+
+<OrbitProvider theme="light" brand="brand-a">
+  <App />
+</OrbitProvider>;
+```
+
+Supported props:
+
+- `theme`: `light`, `dark`, or a custom object of CSS variable overrides
+- `brand`: `null`, `brand-a`, or `brand-b`
+- `as`: wrapper element tag, defaults to `div`
+
+## Built-in themes
+
+Use the built-in theme names when you want OrbitUI to map the generated semantic tokens automatically.
+
+```jsx
+<OrbitProvider theme="light">{children}</OrbitProvider>
+<OrbitProvider theme="dark">{children}</OrbitProvider>
+```
+
+Under the hood, the provider sets `data-theme="dark"` for the dark theme and lets the CSS layer switch semantic variables.
+
+## Brand overrides
+
+Brands are independent from the base light or dark choice. A brand changes the active brand token layer without changing the semantic role map.
+
+```jsx
+<OrbitProvider theme="dark" brand="brand-b">
+  <Dashboard />
+</OrbitProvider>
+```
+
+Current brand packs:
+
+- `brand-a`: cooler primary ramp with `Plus Jakarta Sans`
+- `brand-b`: warmer primary ramp with `Manrope`
+
+## Custom theme overrides
+
+If you need a project-specific surface or accent adjustment, pass a plain object. Keys may be camelCase or already-prefixed CSS variables.
+
+```jsx
+<OrbitProvider
+  theme={{
+    colorBackgroundPage: '#08111f',
+    '--color-foreground-primary': '#f8fafc',
+    '--color-action-primary': '#38bdf8',
+  }}
+>
+  <App />
+</OrbitProvider>
+```
+
+OrbitUI normalizes camelCase keys into CSS custom properties before applying them to the provider wrapper.
+
+## Recommended usage
+
+- Mount one `OrbitProvider` near the app shell instead of wrapping individual screens
+- Prefer semantic variables like `--color-action-primary` over raw palette tokens in product code
+- Use brand overrides for identity shifts and custom theme objects for local product tuning
+- Validate combinations in Storybook with the global theme and brand toolbar controls
+
+## CSS behavior
+
+OrbitUI�s base stylesheet maps generated tokens into runtime variables such as:
+
+- `--color-background-page`
+- `--color-foreground-primary`
+- `--color-border-default`
+- `--color-action-primary`
+- `--color-focus-ring`
+
+That means components consume stable semantic names even when the active theme or brand changes.
