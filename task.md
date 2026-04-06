@@ -27,7 +27,7 @@
 
 ## Phase 2 — Design Token Architecture
 
-- [ ] **Task 2.1**: Create base token files (colors, spacing, typography, radii, shadows)  
+- [x] **Task 2.1**: Create base token files (colors, spacing, typography, radii, shadows)  
        _Commit: `feat: define core design tokens (colors, spacing, typography)`_
 - [ ] **Task 2.2**: Create semantic theme tokens (default light + dark)  
        _Commit: `feat: generate light and dark semantic themes`_
@@ -203,7 +203,7 @@
 | Phase              | Tasks  | Done  |
 | ------------------ | ------ | ----- |
 | 1. Scaffolding     | 4      | 4     |
-| 2. Design Tokens   | 5      | 0     |
+| 2. Design Tokens   | 5      | 1     |
 | 3. Core Infra      | 4      | 0     |
 | 4. Components      | 32     | 0     |
 | 5. A11y Audit      | 3      | 0     |
@@ -211,4 +211,4 @@
 | 7. Build & Package | 4      | 0     |
 | 8. CI/CD           | 3      | 0     |
 | 9. Release         | 5      | 0     |
-| **Total**          | **65** | **4** |
+| **Total**          | **65** | **5** |
