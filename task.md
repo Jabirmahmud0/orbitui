@@ -135,7 +135,7 @@
 
 ## Phase 5 — Accessibility Audit & Hardening
 
-- [ ] **Task 5.1**: Full axe-core audit pass across all components — fix any violations  
+- [x] **Task 5.1**: Full axe-core audit pass across all components — fix any violations  
        _Commit: `fix: global accessibility improvements from axe-core audit`_
 - [ ] **Task 5.2**: Keyboard navigation audit — verify every component works keyboard-only  
        _Commit: `fix: refine keyboard navigation across library components`_
@@ -206,9 +206,9 @@
 | 2. Design Tokens   | 5      | 5      |
 | 3. Core Infra      | 4      | 4      |
 | 4. Components      | 32     | 18     |
-| 5. A11y Audit      | 3      | 0      |
+| 5. A11y Audit      | 3      | 1      |
 | 6. Storybook Docs  | 5      | 0      |
 | 7. Build & Package | 4      | 0      |
 | 8. CI/CD           | 3      | 0      |
 | 9. Release         | 5      | 0      |
-| **Total**          | **65** | **31** |
+| **Total**          | **65** | **32** |
