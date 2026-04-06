@@ -3,18 +3,90 @@
   "version": "0.1.0",
   "description": "OrbitUI enterprise-ready React component library and design system.",
   "type": "module",
-  "main": "./dist/orbitui.cjs",
-  "module": "./dist/orbitui.js",
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.js",
   "exports": {
     ".": {
-      "import": "./dist/orbitui.js",
-      "require": "./dist/orbitui.cjs"
-    }
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs",
+      "default": "./dist/index.js"
+    },
+    "./components/Breadcrumbs": {
+      "import": "./dist/components/Breadcrumbs/Breadcrumbs.js",
+      "require": "./dist/components/Breadcrumbs/Breadcrumbs.cjs"
+    },
+    "./components/Button": {
+      "import": "./dist/components/Button/Button.js",
+      "require": "./dist/components/Button/Button.cjs"
+    },
+    "./components/Checkbox": {
+      "import": "./dist/components/Checkbox/Checkbox.js",
+      "require": "./dist/components/Checkbox/Checkbox.cjs"
+    },
+    "./components/Input": {
+      "import": "./dist/components/Input/Input.js",
+      "require": "./dist/components/Input/Input.cjs"
+    },
+    "./components/Pagination": {
+      "import": "./dist/components/Pagination/Pagination.js",
+      "require": "./dist/components/Pagination/Pagination.cjs"
+    },
+    "./components/RadioGroup": {
+      "import": "./dist/components/RadioGroup/RadioGroup.js",
+      "require": "./dist/components/RadioGroup/RadioGroup.cjs"
+    },
+    "./components/Tabs": {
+      "import": "./dist/components/Tabs/Tabs.js",
+      "require": "./dist/components/Tabs/Tabs.cjs"
+    },
+    "./components/Textarea": {
+      "import": "./dist/components/Textarea/Textarea.js",
+      "require": "./dist/components/Textarea/Textarea.cjs"
+    },
+    "./components/Tooltip": {
+      "import": "./dist/components/Tooltip/Tooltip.js",
+      "require": "./dist/components/Tooltip/Tooltip.cjs"
+    },
+    "./providers/OrbitProvider": {
+      "import": "./dist/providers/OrbitProvider.js",
+      "require": "./dist/providers/OrbitProvider.cjs"
+    },
+    "./hooks/useControllableState": {
+      "import": "./dist/hooks/useControllableState.js",
+      "require": "./dist/hooks/useControllableState.cjs"
+    },
+    "./hooks/useId": {
+      "import": "./dist/hooks/useId.js",
+      "require": "./dist/hooks/useId.cjs"
+    },
+    "./hooks/useMediaQuery": {
+      "import": "./dist/hooks/useMediaQuery.js",
+      "require": "./dist/hooks/useMediaQuery.cjs"
+    },
+    "./utils/cn": {
+      "import": "./dist/utils/cn.js",
+      "require": "./dist/utils/cn.cjs"
+    },
+    "./utils/composeRefs": {
+      "import": "./dist/utils/composeRefs.js",
+      "require": "./dist/utils/composeRefs.cjs"
+    },
+    "./utils/createContext": {
+      "import": "./dist/utils/createContext.js",
+      "require": "./dist/utils/createContext.cjs"
+    },
+    "./utils/polymorphic": {
+      "import": "./dist/utils/polymorphic.js",
+      "require": "./dist/utils/polymorphic.cjs"
+    },
+    "./package.json": "./package.json"
   },
   "files": [
     "dist"
   ],
-  "sideEffects": false,
+  "sideEffects": [
+    "**/*.css"
+  ],
   "scripts": {
     "dev": "vite",
     "build": "vite build",
