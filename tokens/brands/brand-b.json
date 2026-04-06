@@ -1,0 +1,28 @@
+{
+  "brand": {
+    "b": {
+      "color": {
+        "primary": {
+          "50": { "value": "#fff6ed" },
+          "100": { "value": "#ffead5" },
+          "200": { "value": "#ffd1aa" },
+          "300": { "value": "#ffb36f" },
+          "400": { "value": "#ff8b38" },
+          "500": { "value": "#ff6b1a" },
+          "600": { "value": "#f14d0a" },
+          "700": { "value": "#c83a0b" },
+          "800": { "value": "#9f3112" },
+          "900": { "value": "#7f2c12" },
+          "950": { "value": "#451306" }
+        }
+      },
+      "typography": {
+        "fontFamily": {
+          "sans": {
+            "value": "\"Manrope\", \"Sora\", \"Segoe UI\", sans-serif"
+          }
+        }
+      }
+    }
+  }
+}
