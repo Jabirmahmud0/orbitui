@@ -4,5 +4,12 @@
   "installCommand": "npm ci",
   "buildCommand": "npm run storybook:build",
   "outputDirectory": "storybook-static",
-  "cleanUrls": true
+  "cleanUrls": true,
+  "redirects": [
+    {
+      "source": "/home",
+      "destination": "/",
+      "permanent": false
+    }
+  ]
 }
