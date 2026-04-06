@@ -2,6 +2,7 @@ export const orbitUiVersion = '0.1.0';
 
 export { Button } from './components/Button';
 export { Input } from './components/Input';
+export { Textarea } from './components/Textarea';
 export { OrbitProvider, useOrbitContext } from './providers/OrbitProvider';
 export { useControllableState } from './hooks/useControllableState';
 export { useId } from './hooks/useId';
