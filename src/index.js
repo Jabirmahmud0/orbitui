@@ -4,6 +4,7 @@ export { Button } from './components/Button';
 export { Checkbox } from './components/Checkbox';
 export { Input } from './components/Input';
 export { RadioGroup, RadioGroupItem } from './components/RadioGroup';
+export { Tabs, TabsContent, TabsList, TabsTrigger } from './components/Tabs';
 export { Textarea } from './components/Textarea';
 export { Tooltip } from './components/Tooltip';
 export { OrbitProvider, useOrbitContext } from './providers/OrbitProvider';
