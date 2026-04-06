@@ -193,7 +193,7 @@
        _Commit: `ci: setup Vercel deployment for Storybook instance`_
 - [ ] **Task 9.4**: Publish v1.0.0 to NPM  
        _Commit: `release: publish orbitui@1.0.0 to NPM registry`_
-- [ ] **Task 9.5**: Final smoke test — install in clean project + verify tree-shaking  
+- [x] **Task 9.5**: Final smoke test — install in clean project + verify tree-shaking  
        _Commit: `test: verify final module output tree-shaking efficacy`_
 
 ---
@@ -210,8 +210,9 @@
 | 6. Storybook Docs  | 5      | 5      |
 | 7. Build & Package | 4      | 4      |
 | 8. CI/CD           | 3      | 3      |
-| 9. Release         | 5      | 3      |
-| **Total**          | **65** | **63** |
+| 9. Release         | 5      | 4      |
+| **Total**          | **65** | **64** |
+
 
 
 

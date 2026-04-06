@@ -130,6 +130,7 @@
     "storybook": "storybook dev -p 6006",
     "storybook:build": "storybook build",
     "check:bundle": "node scripts/check-bundle-size.js",
+    "smoke:package": "node scripts/smoke-package.mjs",
     "release": "semantic-release"
   },
   "lint-staged": {
@@ -211,6 +212,8 @@
     "access": "public"
   }
 }
+
+
 
 
 
