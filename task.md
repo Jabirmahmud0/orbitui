@@ -92,7 +92,7 @@
        _Commit: `feat: implement semantic Breadcrumbs component`_
 - [x] **Task 4.16**: Breadcrumbs — stories + unit tests + a11y tests  
        _Commit: `test: add stories and unit tests for Breadcrumbs`_
-- [ ] **Task 4.17**: Pagination — controlled/uncontrolled, ellipsis  
+- [x] **Task 4.17**: Pagination — controlled/uncontrolled, ellipsis  
        _Commit: `feat: implement accessible Pagination component`_
 - [ ] **Task 4.18**: Pagination — stories + unit tests + a11y tests  
        _Commit: `test: add stories and tests for Pagination`_
@@ -205,10 +205,10 @@
 | 1. Scaffolding     | 4      | 4      |
 | 2. Design Tokens   | 5      | 5      |
 | 3. Core Infra      | 4      | 4      |
-| 4. Components      | 32     | 16     |
+| 4. Components      | 32     | 17     |
 | 5. A11y Audit      | 3      | 0      |
 | 6. Storybook Docs  | 5      | 0      |
 | 7. Build & Package | 4      | 0      |
 | 8. CI/CD           | 3      | 0      |
 | 9. Release         | 5      | 0      |
-| **Total**          | **65** | **29** |
+| **Total**          | **65** | **30** |

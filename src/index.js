@@ -4,6 +4,7 @@ export { Breadcrumbs, BreadcrumbsItem } from './components/Breadcrumbs';
 export { Button } from './components/Button';
 export { Checkbox } from './components/Checkbox';
 export { Input } from './components/Input';
+export { Pagination } from './components/Pagination';
 export { RadioGroup, RadioGroupItem } from './components/RadioGroup';
 export { Tabs, TabsContent, TabsList, TabsTrigger } from './components/Tabs';
 export { Textarea } from './components/Textarea';
