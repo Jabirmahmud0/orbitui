@@ -1,5 +1,6 @@
 import { act, screen } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
+import { axe } from 'vitest-axe';
 
 import { renderWithProviders } from '../../test/setup';
 import { ToastProvider, toast, useToast } from './Toast';
@@ -73,5 +74,33 @@ describe('Toast', () => {
 
     expect(screen.queryByText('Timed')).not.toBeInTheDocument();
     vi.useRealTimers();
+  });
+
+  it('runs action callbacks and remains accessible', async () => {
+    const user = userEvent.setup();
+    const onAction = vi.fn();
+    const { container } = renderToastTree(<div>shell</div>);
+
+    act(() => {
+      toast.show({
+        title: 'Unsaved changes',
+        description: 'Restore the previous draft if this was accidental.',
+        actionLabel: 'Undo',
+        onAction,
+        duration: 0,
+      });
+    });
+
+    await user.click(screen.getByRole('button', { name: 'Undo' }));
+
+    expect(onAction).toHaveBeenCalledTimes(1);
+
+    act(() => {
+      toast.show({ title: 'Accessible', description: 'Notification content', duration: 0 });
+    });
+
+    const results = await axe(container);
+
+    expect(results).toHaveNoViolations();
   });
 });
