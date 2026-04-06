@@ -7,3 +7,5 @@ storybook-static/
 .env
 .env.*
 !.env.example
+
+.vercel
