@@ -88,7 +88,7 @@
        _Commit: `feat: implement Tabs component with compound architecture`_
 - [x] **Task 4.14**: Tabs — stories + unit tests + a11y tests  
        _Commit: `test: add stories and tests for Tabs`_
-- [ ] **Task 4.15**: Breadcrumbs — compound, separator, collapse  
+- [x] **Task 4.15**: Breadcrumbs — compound, separator, collapse  
        _Commit: `feat: implement semantic Breadcrumbs component`_
 - [ ] **Task 4.16**: Breadcrumbs — stories + unit tests + a11y tests  
        _Commit: `test: add stories and unit tests for Breadcrumbs`_
@@ -205,10 +205,10 @@
 | 1. Scaffolding     | 4      | 4      |
 | 2. Design Tokens   | 5      | 5      |
 | 3. Core Infra      | 4      | 4      |
-| 4. Components      | 32     | 14     |
+| 4. Components      | 32     | 15     |
 | 5. A11y Audit      | 3      | 0      |
 | 6. Storybook Docs  | 5      | 0      |
 | 7. Build & Package | 4      | 0      |
 | 8. CI/CD           | 3      | 0      |
 | 9. Release         | 5      | 0      |
-| **Total**          | **65** | **27** |
+| **Total**          | **65** | **28** |
