@@ -23,6 +23,10 @@
       "import": "./dist/components/Checkbox/Checkbox.js",
       "require": "./dist/components/Checkbox/Checkbox.cjs"
     },
+    "./components/Combobox": {
+      "import": "./dist/components/Combobox/Combobox.js",
+      "require": "./dist/components/Combobox/Combobox.cjs"
+    },
     "./components/Dropdown": {
       "import": "./dist/components/Dropdown/Dropdown.js",
       "require": "./dist/components/Dropdown/Dropdown.cjs"
@@ -199,5 +203,6 @@
     "access": "public"
   }
 }
+
 
 

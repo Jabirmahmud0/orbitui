@@ -4,6 +4,7 @@ export const orbitUiVersion = '0.1.0';
 export { Breadcrumbs, BreadcrumbsItem } from './components/Breadcrumbs';
 export { Button } from './components/Button';
 export { Checkbox } from './components/Checkbox';
+export { Combobox } from './components/Combobox';
 export {
   Dropdown,
   DropdownContent,

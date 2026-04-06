@@ -118,7 +118,7 @@
 
 ### Tier 4 — Complex Components
 
-- [ ] **Task 4.27**: Combobox — type-ahead, async, virtualization  
+- [x] **Task 4.27**: Combobox — type-ahead, async, virtualization  
        _Commit: `feat: implement virtualized Combobox component`_
 - [ ] **Task 4.28**: Combobox — stories + unit tests + a11y tests  
        _Commit: `test: add stories and tests for Combobox`_
@@ -205,13 +205,14 @@
 | 1. Scaffolding     | 4      | 4      |
 | 2. Design Tokens   | 5      | 5      |
 | 3. Core Infra      | 4      | 4      |
-| 4. Components      | 32     | 26     |
+| 4. Components      | 32     | 27     |
 | 5. A11y Audit      | 3      | 3      |
 | 6. Storybook Docs  | 5      | 5      |
 | 7. Build & Package | 4      | 4      |
 | 8. CI/CD           | 3      | 3      |
 | 9. Release         | 5      | 3      |
-| **Total**          | **65** | **57** |
+| **Total**          | **65** | **58** |
+
 
 
 
