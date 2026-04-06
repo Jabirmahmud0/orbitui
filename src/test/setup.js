@@ -1,8 +1,11 @@
 import '@testing-library/jest-dom/vitest';
 
+import { createElement } from 'react';
 import { cleanup, render } from '@testing-library/react';
 import { afterEach, expect } from 'vitest';
 import * as matchers from 'vitest-axe/matchers';
+
+import { OrbitProvider } from '../providers/OrbitProvider';
 
 expect.extend(matchers);
 
@@ -15,5 +18,5 @@ afterEach(() => {
 });
 
 export function renderWithProviders(ui, options = {}) {
-  return render(ui, options);
+  return render(createElement(OrbitProvider, null, ui), options);
 }
