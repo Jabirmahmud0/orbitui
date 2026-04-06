@@ -1,0 +1,40 @@
+{
+  "semantic": {
+    "color": {
+      "background": {
+        "page": { "value": "{color.neutral.0.value}" },
+        "surface": { "value": "{color.neutral.50.value}" },
+        "subtle": { "value": "{color.neutral.100.value}" },
+        "inverse": { "value": "{color.neutral.900.value}" }
+      },
+      "foreground": {
+        "primary": { "value": "{color.neutral.900.value}" },
+        "secondary": { "value": "{color.neutral.600.value}" },
+        "muted": { "value": "{color.neutral.500.value}" },
+        "inverse": { "value": "{color.neutral.0.value}" }
+      },
+      "border": {
+        "default": { "value": "{color.neutral.200.value}" },
+        "subtle": { "value": "{color.neutral.100.value}" },
+        "strong": { "value": "{color.neutral.300.value}" },
+        "inverse": { "value": "{color.neutral.700.value}" }
+      },
+      "action": {
+        "primary": { "value": "{color.primary.600.value}" },
+        "primaryHover": { "value": "{color.primary.700.value}" },
+        "primaryActive": { "value": "{color.primary.800.value}" },
+        "secondary": { "value": "{color.neutral.900.value}" },
+        "secondaryHover": { "value": "{color.neutral.700.value}" }
+      },
+      "focus": {
+        "ring": { "value": "{color.info.400.value}" }
+      },
+      "status": {
+        "success": { "value": "{color.success.500.value}" },
+        "warning": { "value": "{color.warning.500.value}" },
+        "danger": { "value": "{color.danger.500.value}" },
+        "info": { "value": "{color.info.500.value}" }
+      }
+    }
+  }
+}
