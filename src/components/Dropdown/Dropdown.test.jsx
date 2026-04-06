@@ -1,6 +1,8 @@
 import { fireEvent, screen } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
+import { axe } from 'vitest-axe';
 
+import { Button } from '../Button';
 import { renderWithProviders } from '../../test/setup';
 import { Dropdown } from './Dropdown';
 
@@ -64,6 +66,27 @@ describe('Dropdown', () => {
     expect(screen.getByRole('menuitem', { name: 'Profile' })).toHaveFocus();
   });
 
+  it('supports asChild triggers and non-closing items', async () => {
+    const user = userEvent.setup();
+
+    renderWithProviders(
+      <Dropdown>
+        <Dropdown.Trigger asChild>
+          <Button variant="outline">Open actions</Button>
+        </Dropdown.Trigger>
+        <Dropdown.Content>
+          <Dropdown.Item closeOnSelect={false}>Pin menu</Dropdown.Item>
+          <Dropdown.Item>Close menu</Dropdown.Item>
+        </Dropdown.Content>
+      </Dropdown>,
+    );
+
+    await user.click(screen.getByRole('button', { name: 'Open actions' }));
+    await user.click(screen.getByRole('menuitem', { name: 'Pin menu' }));
+
+    expect(screen.getByRole('menu')).toBeInTheDocument();
+  });
+
   it('closes on outside interaction and returns focus on escape', async () => {
     const user = userEvent.setup();
 
@@ -89,5 +112,25 @@ describe('Dropdown', () => {
 
     expect(screen.queryByRole('menu')).not.toBeInTheDocument();
     expect(trigger).toHaveFocus();
+  });
+
+  it('has no accessibility violations while open', async () => {
+    const user = userEvent.setup();
+    const { container } = renderWithProviders(
+      <Dropdown>
+        <Dropdown.Trigger>Accessible menu</Dropdown.Trigger>
+        <Dropdown.Content>
+          <Dropdown.Label>Quick actions</Dropdown.Label>
+          <Dropdown.Item shortcut="G P">Profile</Dropdown.Item>
+          <Dropdown.Item>Billing</Dropdown.Item>
+        </Dropdown.Content>
+      </Dropdown>,
+    );
+
+    await user.click(screen.getByRole('button', { name: 'Accessible menu' }));
+
+    const results = await axe(container);
+
+    expect(results).toHaveNoViolations();
   });
 });
