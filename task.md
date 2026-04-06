@@ -16,7 +16,7 @@
 
 - [x] **Task 1.1**: Initialize repo — `package.json`, `.gitignore`, `LICENSE`, Vite + React setup  
       *Commit: `chore: initialize project with React, Vite, and barebones structure`*
-- [ ] **Task 1.2**: Configure Tailwind CSS v4, PostCSS, and base styles  
+- [x] **Task 1.2**: Configure Tailwind CSS v4, PostCSS, and base styles  
       *Commit: `build: configure Tailwind CSS v4 and base layer`*
 - [ ] **Task 1.3**: Configure ESLint, Prettier, and editor config  
       *Commit: `chore: configure ESLint and Prettier for code quality`*
@@ -202,7 +202,7 @@
 
 | Phase | Tasks | Done |
 |---|---|---|
-| 1. Scaffolding | 4 | 1 |
+| 1. Scaffolding | 4 | 2 |
 | 2. Design Tokens | 5 | 0 |
 | 3. Core Infra | 4 | 0 |
 | 4. Components | 32 | 0 |
@@ -211,5 +211,5 @@
 | 7. Build & Package | 4 | 0 |
 | 8. CI/CD | 3 | 0 |
 | 9. Release | 5 | 0 |
-| **Total** | **65** | **1** |
+| **Total** | **65** | **2** |
 

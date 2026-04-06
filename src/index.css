@@ -1,62 +1,55 @@
-:root {
-  color: #e5eefc;
-  background:
-    radial-gradient(circle at top, rgba(78, 116, 255, 0.24), transparent 30%),
-    linear-gradient(180deg, #08111f 0%, #101b34 100%);
-  font-family:
-    "Segoe UI", Inter, system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Sora", "Segoe UI", sans-serif;
+  --font-mono: "IBM Plex Mono", "SFMono-Regular", monospace;
+  --color-surface-strong: #07101f;
+  --color-surface-overlay: rgba(15, 23, 42, 0.72);
+  --color-foreground: #edf4ff;
+  --color-foreground-muted: rgba(237, 244, 255, 0.72);
+  --color-border-subtle: rgba(148, 163, 184, 0.16);
+  --color-accent-soft: #93c5fd;
 }
 
-* {
-  box-sizing: border-box;
-}
+@layer base {
+  :root {
+    color: var(--color-foreground);
+    font-family: var(--font-sans);
+    background-color: var(--color-surface-strong);
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
 
-body {
-  margin: 0;
-  min-width: 320px;
-  min-height: 100vh;
-}
+  * {
+    box-sizing: border-box;
+  }
 
-#root {
-  min-height: 100vh;
-}
+  html {
+    scroll-behavior: smooth;
+  }
 
-.orbit-app-shell {
-  display: grid;
-  min-height: 100vh;
-  place-items: center;
-  padding: 2rem;
-}
+  body {
+    margin: 0;
+    min-width: 320px;
+    min-height: 100vh;
+  }
 
-.orbit-hero {
-  width: min(720px, 100%);
-  border: 1px solid rgba(255, 255, 255, 0.12);
-  border-radius: 24px;
-  padding: 3rem;
-  background: rgba(7, 14, 28, 0.66);
-  box-shadow: 0 24px 80px rgba(0, 0, 0, 0.35);
-  backdrop-filter: blur(18px);
-}
+  body,
+  #root {
+    min-height: 100vh;
+  }
 
-.orbit-kicker {
-  margin: 0 0 0.75rem;
-  font-size: 0.875rem;
-  font-weight: 700;
-  letter-spacing: 0.18em;
-  text-transform: uppercase;
-  color: #93c5fd;
-}
+  button,
+  input,
+  textarea,
+  select {
+    font: inherit;
+  }
 
-.orbit-hero h1 {
-  margin: 0;
-  font-size: clamp(2.5rem, 5vw, 4.75rem);
-  line-height: 0.95;
-}
-
-.orbit-copy {
-  margin: 1.5rem 0 0;
-  max-width: 56ch;
-  font-size: 1.05rem;
-  line-height: 1.6;
-  color: rgba(229, 238, 252, 0.78);
+  ::selection {
+    background: rgba(96, 165, 250, 0.28);
+    color: white;
+  }
 }
