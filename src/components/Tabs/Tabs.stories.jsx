@@ -2,9 +2,27 @@ import { useState } from 'react';
 
 import { Tabs } from './Tabs';
 
+function ControlledTabsExample() {
+  const [value, setValue] = useState('deployments');
+
+  return (
+    <Tabs value={value} onValueChange={setValue}>
+      <Tabs.List aria-label="Runtime views">
+        <Tabs.Trigger value="deployments">Deployments</Tabs.Trigger>
+        <Tabs.Trigger value="logs">Logs</Tabs.Trigger>
+        <Tabs.Trigger value="alerts">Alerts</Tabs.Trigger>
+      </Tabs.List>
+      <Tabs.Content value="deployments">Selected: {value}</Tabs.Content>
+      <Tabs.Content value="logs">Selected: {value}</Tabs.Content>
+      <Tabs.Content value="alerts">Selected: {value}</Tabs.Content>
+    </Tabs>
+  );
+}
+
 export default {
   title: 'Components/Tabs',
   component: Tabs,
+  tags: ['autodocs'],
   args: {
     orientation: 'horizontal',
   },
@@ -14,9 +32,25 @@ export default {
       options: ['horizontal', 'vertical'],
     },
   },
+  parameters: {
+    docs: {
+      description: {
+        component:
+          'Tabs provides a compound interface for grouped views with horizontal or vertical orientation and controlled or uncontrolled state.',
+      },
+    },
+  },
 };
 
 export const Default = {
+  parameters: {
+    docs: {
+      description: {
+        story: 'Default horizontal tabs layout for sectioned product surfaces.',
+      },
+      source: { state: 'open' },
+    },
+  },
   render: (args) => (
     <Tabs {...args} defaultValue="overview">
       <Tabs.List aria-label="Project sections">
@@ -32,6 +66,13 @@ export const Default = {
 };
 
 export const Vertical = {
+  parameters: {
+    docs: {
+      description: {
+        story: 'Vertical tabs work well for workspace settings, side panels, and admin tools.',
+      },
+    },
+  },
   args: {
     orientation: 'vertical',
   },
@@ -50,29 +91,25 @@ export const Vertical = {
 };
 
 export const Controlled = {
-  render: () => {
-    function ControlledTabsExample() {
-      const [value, setValue] = useState('deployments');
-
-      return (
-        <Tabs value={value} onValueChange={setValue}>
-          <Tabs.List aria-label="Runtime views">
-            <Tabs.Trigger value="deployments">Deployments</Tabs.Trigger>
-            <Tabs.Trigger value="logs">Logs</Tabs.Trigger>
-            <Tabs.Trigger value="alerts">Alerts</Tabs.Trigger>
-          </Tabs.List>
-          <Tabs.Content value="deployments">Selected: {value}</Tabs.Content>
-          <Tabs.Content value="logs">Selected: {value}</Tabs.Content>
-          <Tabs.Content value="alerts">Selected: {value}</Tabs.Content>
-        </Tabs>
-      );
-    }
-
-    return <ControlledTabsExample />;
+  parameters: {
+    docs: {
+      description: {
+        story: 'Controlled tabs expose the active value to application state.',
+      },
+      source: { state: 'open' },
+    },
   },
+  render: () => <ControlledTabsExample />,
 };
 
 export const DisabledTab = {
+  parameters: {
+    docs: {
+      description: {
+        story: 'Individual tab triggers can be disabled while the surrounding set remains usable.',
+      },
+    },
+  },
   render: () => (
     <Tabs defaultValue="general">
       <Tabs.List aria-label="Billing tabs">

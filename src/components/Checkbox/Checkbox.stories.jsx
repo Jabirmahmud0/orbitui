@@ -3,6 +3,7 @@ import { Checkbox } from './Checkbox';
 export default {
   title: 'Components/Checkbox',
   component: Checkbox,
+  tags: ['autodocs'],
   args: {
     label: 'Email me about product updates',
     helperText: 'You can change this preference later.',
@@ -22,11 +23,35 @@ export default {
       options: ['start', 'end'],
     },
   },
+  parameters: {
+    docs: {
+      description: {
+        component:
+          'Checkbox handles binary and indeterminate selection with helper text, error state, and custom icon overrides.',
+      },
+    },
+  },
 };
 
-export const Default = {};
+export const Default = {
+  parameters: {
+    docs: {
+      description: {
+        story: 'Interactive checkbox playground with label and validation controls.',
+      },
+      source: { state: 'open' },
+    },
+  },
+};
 
 export const States = {
+  parameters: {
+    docs: {
+      description: {
+        story: 'Common checked, indeterminate, invalid, and disabled states in one view.',
+      },
+    },
+  },
   render: () => (
     <div className="grid gap-4">
       <Checkbox label="Default" helperText="Unchecked by default." />
@@ -43,6 +68,14 @@ export const States = {
 };
 
 export const CustomIcons = {
+  parameters: {
+    docs: {
+      description: {
+        story:
+          'Checked and indeterminate icons can be replaced while retaining the same keyboard and screen reader contract.',
+      },
+    },
+  },
   render: () => (
     <div className="grid gap-4">
       <Checkbox
@@ -68,6 +101,13 @@ export const CustomIcons = {
 };
 
 export const LeadingLabel = {
+  parameters: {
+    docs: {
+      description: {
+        story: 'Label placement can be moved ahead of the control for tighter preference layouts.',
+      },
+    },
+  },
   args: {
     label: 'Place label before the checkbox',
     labelPlacement: 'start',

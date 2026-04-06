@@ -7,7 +7,7 @@ const config = {
     options: {},
   },
   docs: {
-    autodocs: false,
+    autodocs: 'tag',
   },
 };
 

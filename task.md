@@ -154,7 +154,7 @@
        _Commit: `docs: create design token reference page`_
 - [x] **Task 6.4**: Write MDX docs — Theming guide + Accessibility guide  
        _Commit: `docs: compose theming and accessibility guides`_
-- [ ] **Task 6.5**: Enable autodocs + polish all component doc pages  
+- [x] **Task 6.5**: Enable autodocs + polish all component doc pages  
        _Commit: `docs: refine component auto-documentation output`_
 
 ---
@@ -207,8 +207,8 @@
 | 3. Core Infra      | 4      | 4      |
 | 4. Components      | 32     | 18     |
 | 5. A11y Audit      | 3      | 3      |
-| 6. Storybook Docs  | 5      | 4      |
+| 6. Storybook Docs  | 5      | 5      |
 | 7. Build & Package | 4      | 0      |
 | 8. CI/CD           | 3      | 0      |
 | 9. Release         | 5      | 0      |
-| **Total**          | **65** | **38** |
+| **Total**          | **65** | **39** |

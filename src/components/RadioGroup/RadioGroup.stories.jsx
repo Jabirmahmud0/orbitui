@@ -3,6 +3,7 @@ import { RadioGroup } from './RadioGroup';
 export default {
   title: 'Components/RadioGroup',
   component: RadioGroup,
+  tags: ['autodocs'],
   args: {
     label: 'Deployment strategy',
     helperText: 'Choose how updates roll out to your workspace.',
@@ -21,9 +22,25 @@ export default {
       options: ['sm', 'md'],
     },
   },
+  parameters: {
+    docs: {
+      description: {
+        component:
+          'RadioGroup manages single-choice selection with compound items, orientation control, descriptions, and validation state.',
+      },
+    },
+  },
 };
 
 export const Default = {
+  parameters: {
+    docs: {
+      description: {
+        story: 'Vertical single-select group with descriptions for each option.',
+      },
+      source: { state: 'open' },
+    },
+  },
   render: (args) => (
     <RadioGroup {...args} defaultValue="staged">
       <RadioGroup.Item value="staged" description="Release gradually over 24 hours.">
@@ -40,6 +57,13 @@ export const Default = {
 };
 
 export const Horizontal = {
+  parameters: {
+    docs: {
+      description: {
+        story: 'Horizontal layout works well for short option sets and compact settings rows.',
+      },
+    },
+  },
   args: {
     label: 'Density',
     helperText: 'Switch between layout presets.',
@@ -55,6 +79,13 @@ export const Horizontal = {
 };
 
 export const Invalid = {
+  parameters: {
+    docs: {
+      description: {
+        story: 'Validation errors can be attached to the group when selection is required.',
+      },
+    },
+  },
   args: {
     label: 'Billing cadence',
     isInvalid: true,
@@ -69,6 +100,13 @@ export const Invalid = {
 };
 
 export const DisabledOption = {
+  parameters: {
+    docs: {
+      description: {
+        story: 'Individual options can be disabled while the rest of the group stays interactive.',
+      },
+    },
+  },
   args: {
     label: 'Support tier',
   },

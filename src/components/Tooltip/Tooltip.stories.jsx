@@ -4,6 +4,7 @@ import { Tooltip } from './Tooltip';
 export default {
   title: 'Components/Tooltip',
   component: Tooltip,
+  tags: ['autodocs'],
   args: {
     content: 'Copy deployment URL',
     placement: 'top',
@@ -23,6 +24,14 @@ export default {
       options: ['hover', 'focus'],
     },
   },
+  parameters: {
+    docs: {
+      description: {
+        component:
+          'Tooltip reveals contextual helper content on hover or focus with directional placement and optional arrow support.',
+      },
+    },
+  },
   render: (args) => (
     <div className="flex min-h-32 items-center justify-center p-10">
       <Tooltip {...args}>
@@ -32,9 +41,25 @@ export default {
   ),
 };
 
-export const Default = {};
+export const Default = {
+  parameters: {
+    docs: {
+      description: {
+        story: 'Interactive tooltip playground anchored to a standard button trigger.',
+      },
+      source: { state: 'open' },
+    },
+  },
+};
 
 export const Placements = {
+  parameters: {
+    docs: {
+      description: {
+        story: 'Placement options let the tooltip adapt to surrounding layout constraints.',
+      },
+    },
+  },
   render: () => (
     <div className="grid grid-cols-2 gap-8 p-10">
       <Tooltip content="Above trigger" placement="top" delay={0} closeDelay={0}>
@@ -54,6 +79,13 @@ export const Placements = {
 };
 
 export const FocusTrigger = {
+  parameters: {
+    docs: {
+      description: {
+        story: 'Keyboard users can reveal help text on focus without relying on hover.',
+      },
+    },
+  },
   args: {
     content: 'Visible only on keyboard focus',
     trigger: 'focus',
@@ -61,6 +93,13 @@ export const FocusTrigger = {
 };
 
 export const WithoutArrow = {
+  parameters: {
+    docs: {
+      description: {
+        story: 'Arrow rendering can be disabled for simpler overlay treatments.',
+      },
+    },
+  },
   args: {
     content: 'Arrow hidden for compact layouts',
     showArrow: false,

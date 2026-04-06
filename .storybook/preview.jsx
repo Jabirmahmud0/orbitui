@@ -62,6 +62,11 @@ export const parameters = {
     expanded: true,
     sort: 'requiredFirst',
   },
+  docs: {
+    source: {
+      state: 'hidden',
+    },
+  },
   layout: 'centered',
   options: {
     storySort: {
