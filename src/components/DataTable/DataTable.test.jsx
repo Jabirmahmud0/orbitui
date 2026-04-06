@@ -1,5 +1,6 @@
 import { fireEvent, screen } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
+import { axe } from 'vitest-axe';
 
 import { renderWithProviders } from '../../test/setup';
 import { DataTable } from './DataTable';
@@ -31,7 +32,7 @@ describe('DataTable', () => {
     expect(screen.queryByText('Ari Lane')).not.toBeInTheDocument();
   });
 
-  it('sorts rows by sortable headers', async () => {
+  it('sorts rows by sortable headers and cycles sorting state', async () => {
     const user = userEvent.setup();
 
     renderWithProviders(<DataTable columns={columns} data={rows.slice(0, 4)} />);
@@ -43,6 +44,9 @@ describe('DataTable', () => {
 
     await user.click(scoreHeader);
     expect(screen.getAllByRole('row')[1]).toHaveTextContent('Maya Chen');
+
+    await user.click(scoreHeader);
+    expect(screen.getAllByRole('row')[1]).toHaveTextContent('Ari Lane');
   });
 
   it('supports row selection and select-all behavior', async () => {
@@ -95,5 +99,14 @@ describe('DataTable', () => {
 
     rerender(<DataTable columns={columns} data={[]} emptyMessage="Nothing found" />);
     expect(screen.getByText('Nothing found')).toBeInTheDocument();
+  });
+
+  it('has no accessibility violations', async () => {
+    const { container } = renderWithProviders(
+      <DataTable columns={columns} data={rows.slice(0, 4)} selectable />,
+    );
+
+    const results = await axe(container);
+    expect(results).toHaveNoViolations();
   });
 });
