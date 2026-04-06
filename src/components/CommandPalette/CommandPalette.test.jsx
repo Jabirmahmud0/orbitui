@@ -1,5 +1,6 @@
 import { fireEvent, screen } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
+import { axe } from 'vitest-axe';
 
 import { renderWithProviders } from '../../test/setup';
 import { CommandPalette } from './CommandPalette';
@@ -120,5 +121,12 @@ describe('CommandPalette', () => {
 
     await user.keyboard('{Control>}k{/Control}');
     expect(screen.queryByRole('dialog', { name: 'Command palette' })).not.toBeInTheDocument();
+  });
+
+  it('has no accessibility violations', async () => {
+    const { container } = renderWithProviders(<CommandPalette items={commands} defaultOpen />);
+
+    const results = await axe(container);
+    expect(results).toHaveNoViolations();
   });
 });

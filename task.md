@@ -128,7 +128,7 @@
        _Commit: `test: add stories and tests for DataTable`_
 - [x] **Task 4.31**: CommandPalette — Cmd+K, grouped actions, search  
        _Commit: `feat: implement CommandPalette interface`_
-- [ ] **Task 4.32**: CommandPalette — stories + unit tests + a11y tests  
+- [x] **Task 4.32**: CommandPalette — stories + unit tests + a11y tests  
        _Commit: `test: add stories and tests for CommandPalette`_
 
 ---
@@ -205,13 +205,14 @@
 | 1. Scaffolding     | 4      | 4      |
 | 2. Design Tokens   | 5      | 5      |
 | 3. Core Infra      | 4      | 4      |
-| 4. Components      | 32     | 31     |
+| 4. Components      | 32     | 32     |
 | 5. A11y Audit      | 3      | 3      |
 | 6. Storybook Docs  | 5      | 5      |
 | 7. Build & Package | 4      | 4      |
 | 8. CI/CD           | 3      | 3      |
 | 9. Release         | 5      | 3      |
-| **Total**          | **65** | **62** |
+| **Total**          | **65** | **63** |
+
 
 
 
