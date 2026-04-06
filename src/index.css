@@ -1,25 +1,85 @@
+@import './tokens/generated/variables.css';
 @import 'tailwindcss';
 
 @theme {
-  --font-sans: 'Sora', 'Segoe UI', sans-serif;
-  --font-mono: 'IBM Plex Mono', 'SFMono-Regular', monospace;
-  --color-surface-strong: #07101f;
-  --color-surface-overlay: rgba(15, 23, 42, 0.72);
-  --color-foreground: #edf4ff;
-  --color-foreground-muted: rgba(237, 244, 255, 0.72);
-  --color-border-subtle: rgba(148, 163, 184, 0.16);
-  --color-accent-soft: #93c5fd;
+  --font-sans: var(--typography-font-family-sans);
+  --font-mono: var(--typography-font-family-mono);
+  --color-orbit-surface-strong: var(--color-background-page);
+  --color-orbit-surface-overlay: color-mix(
+    in srgb,
+    var(--color-background-surface) 84%,
+    transparent
+  );
+  --color-orbit-foreground: var(--color-foreground-primary);
+  --color-orbit-foreground-muted: var(--color-foreground-muted);
+  --color-orbit-border-subtle: var(--color-border-subtle);
+  --color-orbit-accent-soft: var(--color-action-primary);
 }
 
 @layer base {
   :root {
-    color: var(--color-foreground);
+    --color-background-page: var(--theme-default-semantic-color-background-page);
+    --color-background-surface: var(--theme-default-semantic-color-background-surface);
+    --color-background-subtle: var(--theme-default-semantic-color-background-subtle);
+    --color-background-inverse: var(--theme-default-semantic-color-background-inverse);
+    --color-foreground-primary: var(--theme-default-semantic-color-foreground-primary);
+    --color-foreground-secondary: var(--theme-default-semantic-color-foreground-secondary);
+    --color-foreground-muted: var(--theme-default-semantic-color-foreground-muted);
+    --color-foreground-inverse: var(--theme-default-semantic-color-foreground-inverse);
+    --color-border-default: var(--theme-default-semantic-color-border-default);
+    --color-border-subtle: var(--theme-default-semantic-color-border-subtle);
+    --color-border-strong: var(--theme-default-semantic-color-border-strong);
+    --color-border-inverse: var(--theme-default-semantic-color-border-inverse);
+    --color-action-primary: var(--theme-default-semantic-color-action-primary);
+    --color-action-primary-hover: var(--theme-default-semantic-color-action-primary-hover);
+    --color-action-primary-active: var(--theme-default-semantic-color-action-primary-active);
+    --color-action-secondary: var(--theme-default-semantic-color-action-secondary);
+    --color-action-secondary-hover: var(--theme-default-semantic-color-action-secondary-hover);
+    --color-focus-ring: var(--theme-default-semantic-color-focus-ring);
+    --color-status-success: var(--theme-default-semantic-color-status-success);
+    --color-status-warning: var(--theme-default-semantic-color-status-warning);
+    --color-status-danger: var(--theme-default-semantic-color-status-danger);
+    --color-status-info: var(--theme-default-semantic-color-status-info);
+    color: var(--color-foreground-primary);
     font-family: var(--font-sans);
-    background-color: var(--color-surface-strong);
+    background-color: var(--color-background-page);
     font-synthesis: none;
     text-rendering: optimizeLegibility;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+  }
+
+  :root[data-theme='dark'] {
+    --color-background-page: var(--theme-dark-semantic-color-background-page);
+    --color-background-surface: var(--theme-dark-semantic-color-background-surface);
+    --color-background-subtle: var(--theme-dark-semantic-color-background-subtle);
+    --color-background-inverse: var(--theme-dark-semantic-color-background-inverse);
+    --color-foreground-primary: var(--theme-dark-semantic-color-foreground-primary);
+    --color-foreground-secondary: var(--theme-dark-semantic-color-foreground-secondary);
+    --color-foreground-muted: var(--theme-dark-semantic-color-foreground-muted);
+    --color-foreground-inverse: var(--theme-dark-semantic-color-foreground-inverse);
+    --color-border-default: var(--theme-dark-semantic-color-border-default);
+    --color-border-subtle: var(--theme-dark-semantic-color-border-subtle);
+    --color-border-strong: var(--theme-dark-semantic-color-border-strong);
+    --color-border-inverse: var(--theme-dark-semantic-color-border-inverse);
+    --color-action-primary: var(--theme-dark-semantic-color-action-primary);
+    --color-action-primary-hover: var(--theme-dark-semantic-color-action-primary-hover);
+    --color-action-primary-active: var(--theme-dark-semantic-color-action-primary-active);
+    --color-action-secondary: var(--theme-dark-semantic-color-action-secondary);
+    --color-action-secondary-hover: var(--theme-dark-semantic-color-action-secondary-hover);
+    --color-focus-ring: var(--theme-dark-semantic-color-focus-ring);
+    --color-status-success: var(--theme-dark-semantic-color-status-success);
+    --color-status-warning: var(--theme-dark-semantic-color-status-warning);
+    --color-status-danger: var(--theme-dark-semantic-color-status-danger);
+    --color-status-info: var(--theme-dark-semantic-color-status-info);
+  }
+
+  :root[data-brand='brand-a'] {
+    --font-sans: var(--brand-a-typography-font-family-sans);
+  }
+
+  :root[data-brand='brand-b'] {
+    --font-sans: var(--brand-b-typography-font-family-sans);
   }
 
   * {
@@ -49,7 +109,7 @@
   }
 
   ::selection {
-    background: rgba(96, 165, 250, 0.28);
+    background: color-mix(in srgb, var(--color-focus-ring) 30%, transparent);
     color: white;
   }
 }

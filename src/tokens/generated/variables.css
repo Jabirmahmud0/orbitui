@@ -93,8 +93,8 @@
   --spacing-16: 4rem;
   --spacing-20: 5rem;
   --spacing-24: 6rem;
-  --typography-font-family-sans: 'Sora', 'Segoe UI', sans-serif;
-  --typography-font-family-mono: 'IBM Plex Mono', 'SFMono-Regular', monospace;
+  --typography-font-family-sans: "Sora", "Segoe UI", sans-serif;
+  --typography-font-family-mono: "IBM Plex Mono", "SFMono-Regular", monospace;
   --typography-font-size-xs: 0.75rem;
   --typography-font-size-sm: 0.875rem;
   --typography-font-size-md: 1rem;
@@ -125,7 +125,7 @@
   --brand-a-color-primary-800: #184887;
   --brand-a-color-primary-900: #1a3d70;
   --brand-a-color-primary-950: #122749;
-  --brand-a-typography-font-family-sans: 'Plus Jakarta Sans', 'Sora', 'Segoe UI', sans-serif;
+  --brand-a-typography-font-family-sans: "Plus Jakarta Sans", "Sora", "Segoe UI", sans-serif;
   --brand-b-color-primary-50: #fff6ed;
   --brand-b-color-primary-100: #ffead5;
   --brand-b-color-primary-200: #ffd1aa;
@@ -137,7 +137,7 @@
   --brand-b-color-primary-800: #9f3112;
   --brand-b-color-primary-900: #7f2c12;
   --brand-b-color-primary-950: #451306;
-  --brand-b-typography-font-family-sans: 'Manrope', 'Sora', 'Segoe UI', sans-serif;
+  --brand-b-typography-font-family-sans: "Manrope", "Sora", "Segoe UI", sans-serif;
   --theme-dark-semantic-color-background-page: var(--color-neutral-950);
   --theme-dark-semantic-color-background-surface: var(--color-neutral-900);
   --theme-dark-semantic-color-background-subtle: var(--color-neutral-800);
