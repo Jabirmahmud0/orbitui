@@ -1,8 +1,10 @@
 import { useState } from 'react';
-import { screen } from '@testing-library/react';
+import { fireEvent, screen } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
+import { axe } from 'vitest-axe';
 
 import { renderWithProviders } from '../../test/setup';
+import { Button } from '../Button';
 import { Dialog, Modal } from './Modal';
 
 function renderModal(props = {}) {
@@ -100,9 +102,7 @@ describe('Modal', () => {
     expect(screen.getByRole('dialog', { name: 'Custom trigger modal' })).toBeInTheDocument();
   });
 
-  it('respects keyboard dismissal settings and size variants', async () => {
-    const user = userEvent.setup();
-
+  it('respects keyboard dismissal settings and size variants', () => {
     renderWithProviders(
       <Modal defaultOpen isKeyboardDismissDisabled size="full">
         <Modal.Trigger>Ignored</Modal.Trigger>
@@ -119,8 +119,64 @@ describe('Modal', () => {
 
     expect(dialog).toHaveClass('min-h-[100dvh]');
 
-    await user.keyboard('{Escape}');
+    fireEvent.keyDown(dialog, { key: 'Escape' });
 
     expect(screen.getByRole('dialog', { name: 'Fullscreen modal' })).toBeInTheDocument();
+  });
+
+  it('closes with Escape by default and restores focus to the trigger', async () => {
+    const user = userEvent.setup();
+
+    renderModal();
+
+    const trigger = screen.getByRole('button', { name: 'Open modal' });
+
+    await user.click(trigger);
+
+    const dialog = screen.getByRole('dialog', { name: 'Modal title' });
+
+    expect(dialog).toBeInTheDocument();
+
+    fireEvent.keyDown(dialog, { key: 'Escape' });
+
+    expect(screen.queryByRole('dialog')).not.toBeInTheDocument();
+    expect(trigger).toHaveFocus();
+  });
+
+  it('supports alertdialog semantics', async () => {
+    const user = userEvent.setup();
+
+    renderWithProviders(
+      <Dialog defaultOpen role="alertdialog">
+        <Dialog.Trigger>Delete</Dialog.Trigger>
+        <Dialog.Content>
+          <Dialog.Header>
+            <Dialog.Title>Delete workspace</Dialog.Title>
+            <Dialog.Description>This action cannot be undone.</Dialog.Description>
+          </Dialog.Header>
+          <Dialog.Footer>
+            <Dialog.Close>Cancel</Dialog.Close>
+            <Button variant="danger">Delete</Button>
+          </Dialog.Footer>
+        </Dialog.Content>
+      </Dialog>,
+    );
+
+    expect(screen.getByRole('alertdialog', { name: 'Delete workspace' })).toBeInTheDocument();
+
+    await user.click(screen.getByRole('button', { name: 'Cancel' }));
+
+    expect(screen.queryByRole('alertdialog')).not.toBeInTheDocument();
+  });
+
+  it('has no accessibility violations while open', async () => {
+    const user = userEvent.setup();
+    const { container } = renderModal();
+
+    await user.click(screen.getByRole('button', { name: 'Open modal' }));
+
+    const results = await axe(container);
+
+    expect(results).toHaveNoViolations();
   });
 });
