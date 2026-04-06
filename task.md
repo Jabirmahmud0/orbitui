@@ -109,7 +109,7 @@
        _Commit: `test: add stories and tests for Dropdown`_
 - [x] **Task 4.23**: Select — searchable, grouped, multi-select  
        _Commit: `feat: implement advanced Select component`_
-- [ ] **Task 4.24**: Select — stories + unit tests + a11y tests  
+- [x] **Task 4.24**: Select — stories + unit tests + a11y tests  
        _Commit: `test: add stories and tests for Select`_
 - [ ] **Task 4.25**: Toast/Notification — provider, imperative API, stacking  
        _Commit: `feat: implement Toast notifications system`_
@@ -205,13 +205,14 @@
 | 1. Scaffolding     | 4      | 4      |
 | 2. Design Tokens   | 5      | 5      |
 | 3. Core Infra      | 4      | 4      |
-| 4. Components      | 32     | 23     |
+| 4. Components      | 32     | 24     |
 | 5. A11y Audit      | 3      | 3      |
 | 6. Storybook Docs  | 5      | 5      |
 | 7. Build & Package | 4      | 4      |
 | 8. CI/CD           | 3      | 3      |
 | 9. Release         | 5      | 3      |
-| **Total**          | **65** | **54** |
+| **Total**          | **65** | **55** |
+
 
 
 

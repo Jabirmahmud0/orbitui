@@ -1,5 +1,6 @@
 import { fireEvent, screen } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
+import { axe } from 'vitest-axe';
 
 import { renderWithProviders } from '../../test/setup';
 import { Select } from './Select';
@@ -90,5 +91,18 @@ describe('Select', () => {
 
     expect(screen.queryByRole('listbox')).not.toBeInTheDocument();
     expect(trigger).toHaveFocus();
+  });
+
+  it('has no accessibility violations while open', async () => {
+    const user = userEvent.setup();
+    const { container } = renderWithProviders(
+      <Select label="Accessible team" groups={groupedOptions} searchable />,
+    );
+
+    await user.click(screen.getByRole('button', { name: /Accessible team/i }));
+
+    const results = await axe(container);
+
+    expect(results).toHaveNoViolations();
   });
 });
