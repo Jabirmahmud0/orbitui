@@ -5,6 +5,7 @@ export { Breadcrumbs, BreadcrumbsItem } from './components/Breadcrumbs';
 export { Button } from './components/Button';
 export { Checkbox } from './components/Checkbox';
 export { Combobox } from './components/Combobox';
+export { DataTable } from './components/DataTable';
 export {
   Dropdown,
   DropdownContent,
@@ -51,3 +52,4 @@ export { createPolymorphicComponent } from './utils/polymorphic';
 
 // Generated tokens
 export { default as orbitTokens } from './tokens/generated/tokens';
+

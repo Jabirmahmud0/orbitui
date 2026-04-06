@@ -122,7 +122,7 @@
        _Commit: `feat: implement virtualized Combobox component`_
 - [x] **Task 4.28**: Combobox — stories + unit tests + a11y tests  
        _Commit: `test: add stories and tests for Combobox`_
-- [ ] **Task 4.29**: DataTable — sorting, filtering, selection, virtualization  
+- [x] **Task 4.29**: DataTable — sorting, filtering, selection, virtualization  
        _Commit: `feat: implement high-performance DataTable component`_
 - [ ] **Task 4.30**: DataTable — stories + unit tests + a11y tests  
        _Commit: `test: add stories and tests for DataTable`_
@@ -205,13 +205,14 @@
 | 1. Scaffolding     | 4      | 4      |
 | 2. Design Tokens   | 5      | 5      |
 | 3. Core Infra      | 4      | 4      |
-| 4. Components      | 32     | 28     |
+| 4. Components      | 32     | 29     |
 | 5. A11y Audit      | 3      | 3      |
 | 6. Storybook Docs  | 5      | 5      |
 | 7. Build & Package | 4      | 4      |
 | 8. CI/CD           | 3      | 3      |
 | 9. Release         | 5      | 3      |
-| **Total**          | **65** | **59** |
+| **Total**          | **65** | **60** |
+
 
 
 

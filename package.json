@@ -27,6 +27,10 @@
       "import": "./dist/components/Combobox/Combobox.js",
       "require": "./dist/components/Combobox/Combobox.cjs"
     },
+    "./components/DataTable": {
+      "import": "./dist/components/DataTable/DataTable.js",
+      "require": "./dist/components/DataTable/DataTable.cjs"
+    },
     "./components/Dropdown": {
       "import": "./dist/components/Dropdown/Dropdown.js",
       "require": "./dist/components/Dropdown/Dropdown.cjs"
@@ -203,6 +207,7 @@
     "access": "public"
   }
 }
+
 
 
 
