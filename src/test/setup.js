@@ -13,6 +13,15 @@ HTMLCanvasElement.prototype.getContext = () => ({
   measureText: () => ({ width: 0 }),
 });
 
+const originalGetComputedStyle = window.getComputedStyle.bind(window);
+window.getComputedStyle = (element, pseudoElt) => {
+  if (pseudoElt) {
+    return originalGetComputedStyle(element);
+  }
+
+  return originalGetComputedStyle(element, pseudoElt);
+};
+
 afterEach(() => {
   cleanup();
 });
