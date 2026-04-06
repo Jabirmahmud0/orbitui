@@ -1,0 +1,42 @@
+{
+  "name": "@orbitui/react",
+  "version": "0.1.0",
+  "description": "OrbitUI enterprise-ready React component library and design system.",
+  "type": "module",
+  "main": "./dist/orbitui.cjs",
+  "module": "./dist/orbitui.js",
+  "exports": {
+    ".": {
+      "import": "./dist/orbitui.js",
+      "require": "./dist/orbitui.cjs"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "sideEffects": false,
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "keywords": [
+    "orbitui",
+    "react",
+    "design-system",
+    "component-library",
+    "vite"
+  ],
+  "author": "Jabir Mahmud",
+  "license": "MIT",
+  "peerDependencies": {
+    "react": ">=18.2.0",
+    "react-dom": ">=18.2.0"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^5.0.0",
+    "react": "^19.2.4",
+    "react-dom": "^19.2.4",
+    "vite": "^7.1.12"
+  }
+}
