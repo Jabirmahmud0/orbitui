@@ -1,0 +1,50 @@
+import { Meta } from '@storybook/addon-docs/blocks';
+
+<Meta title="Getting Started" />
+
+# Getting Started
+
+Wrap your application with `OrbitProvider` to control theme and brand behavior across the component tree.
+
+```jsx
+import { OrbitProvider, Button, Input } from '@orbitui/react';
+
+export function App() {
+  return (
+    <OrbitProvider theme="light" brand="brand-a">
+      <main style={{ padding: 24 }}>
+        <Input label="Workspace name" placeholder="Acme Control Room" />
+        <Button style={{ marginTop: 16 }}>Create workspace</Button>
+      </main>
+    </OrbitProvider>
+  );
+}
+```
+
+## Theme switching
+
+Use the built-in theme names when you want generated semantic tokens:
+
+```jsx
+<OrbitProvider theme="dark">{children}</OrbitProvider>
+```
+
+You can also pass a custom variable object:
+
+```jsx
+<OrbitProvider
+  theme={{
+    '--color-background-page': '#0b1020',
+    '--color-foreground-primary': '#f8fafc',
+    '--color-action-primary': '#38bdf8',
+  }}
+>
+  {children}
+</OrbitProvider>
+```
+
+## Recommended setup
+
+- Use semantic tokens instead of hardcoded colors in app code
+- Keep `OrbitProvider` near the app shell so all components inherit the same contract
+- Use Storybook globals to validate component behavior across themes and brands

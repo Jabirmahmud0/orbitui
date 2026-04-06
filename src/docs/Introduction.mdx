@@ -1,0 +1,41 @@
+import { Meta } from '@storybook/addon-docs/blocks';
+
+<Meta title="Introduction" />
+
+# OrbitUI
+
+OrbitUI is a React component library and design system for product interfaces that need accessible primitives, consistent theming, and a token-driven visual foundation.
+
+## What ships today
+
+- Theme-aware primitives built for React applications
+- Multi-brand support through `OrbitProvider`
+- CSS variable tokens generated from a central token pipeline
+- Storybook-based component development and accessibility review
+
+## Principles
+
+- Accessibility first: keyboard support and axe coverage are part of the library workflow
+- Token driven: spacing, color, type, and semantic roles come from generated tokens
+- Composition over lock-in: components expose controlled and compound patterns where appropriate
+
+## Included components
+
+- Button
+- Input
+- Textarea
+- Checkbox
+- RadioGroup
+- Tooltip
+- Tabs
+- Breadcrumbs
+- Pagination
+
+## Theming model
+
+OrbitUI separates global theme and brand concerns:
+
+- `theme`: `light`, `dark`, or a custom CSS variable object
+- `brand`: `default`, `brand-a`, or `brand-b`
+
+The same configuration powers the runtime provider and the Storybook toolbar.
