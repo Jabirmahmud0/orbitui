@@ -161,7 +161,7 @@
 
 ## Phase 7 — Build, Packaging & Bundle
 
-- [ ] **Task 7.1**: Configure Vite library mode — ESM + CJS dual output, preserveModules  
+- [x] **Task 7.1**: Configure Vite library mode — ESM + CJS dual output, preserveModules  
        _Commit: `build: setup Vite for robust library module output`_
 - [ ] **Task 7.2**: Configure `package.json` exports map, peerDependencies, sideEffects  
        _Commit: `chore: finalize package.json exports mapping and dependencies`_
@@ -208,7 +208,7 @@
 | 4. Components      | 32     | 18     |
 | 5. A11y Audit      | 3      | 3      |
 | 6. Storybook Docs  | 5      | 5      |
-| 7. Build & Package | 4      | 0      |
+| 7. Build & Package | 4      | 1      |
 | 8. CI/CD           | 3      | 0      |
 | 9. Release         | 5      | 0      |
-| **Total**          | **65** | **39** |
+| **Total**          | **65** | **40** |
