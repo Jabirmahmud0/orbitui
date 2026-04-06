@@ -185,7 +185,7 @@
 
 ## Phase 9 — Public Release
 
-- [ ] **Task 9.1**: Write README.md — badges, quick start, architecture, examples  
+- [x] **Task 9.1**: Write README.md — badges, quick start, architecture, examples  
        _Commit: `docs: write comprehensive public README`_
 - [ ] **Task 9.2**: Write CONTRIBUTING.md + CHANGELOG.md  
        _Commit: `docs: add code of conduct, contributing, and changelog stubs`_
@@ -210,5 +210,5 @@
 | 6. Storybook Docs  | 5      | 5      |
 | 7. Build & Package | 4      | 4      |
 | 8. CI/CD           | 3      | 3      |
-| 9. Release         | 5      | 0      |
-| **Total**          | **65** | **46** |
+| 9. Release         | 5      | 1      |
+| **Total**          | **65** | **47** |
