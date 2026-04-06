@@ -30,7 +30,7 @@ export default function App() {
               </span>
             </div>
           </div>
-          <aside className="grid gap-4 rounded-[2rem] border border-white/10 bg-white/8 p-5 shadow-[0_24px_100px_rgba(8,15,31,0.55)] backdrop-blur-xl">
+          <div className="grid gap-4 rounded-[2rem] border border-white/10 bg-white/8 p-5 shadow-[0_24px_100px_rgba(8,15,31,0.55)] backdrop-blur-xl">
             <div className="rounded-[1.5rem] border border-white/10 bg-[var(--color-surface-overlay)] p-5">
               <p className="text-xs font-semibold uppercase tracking-[0.24em] text-[var(--color-accent-soft)]">
                 Current milestone
@@ -52,7 +52,7 @@ export default function App() {
                 Next up: linting, formatting, and test infrastructure.
               </p>
             </div>
-          </aside>
+          </div>
         </div>
       </section>
     </main>

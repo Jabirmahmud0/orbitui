@@ -20,7 +20,7 @@
        _Commit: `build: configure Tailwind CSS v4 and base layer`_
 - [x] **Task 1.3**: Configure ESLint, Prettier, and editor config  
        _Commit: `chore: configure ESLint and Prettier for code quality`_
-- [ ] **Task 1.4**: Configure Vitest, Testing Library, and axe-core test setup  
+- [x] **Task 1.4**: Configure Vitest, Testing Library, and axe-core test setup  
        _Commit: `test: set up Vitest and Testing Library with axe-core`_
 
 ---
@@ -202,7 +202,7 @@
 
 | Phase              | Tasks  | Done  |
 | ------------------ | ------ | ----- |
-| 1. Scaffolding     | 4      | 3     |
+| 1. Scaffolding     | 4      | 4     |
 | 2. Design Tokens   | 5      | 0     |
 | 3. Core Infra      | 4      | 0     |
 | 4. Components      | 32     | 0     |
@@ -211,4 +211,4 @@
 | 7. Build & Package | 4      | 0     |
 | 8. CI/CD           | 3      | 0     |
 | 9. Release         | 5      | 0     |
-| **Total**          | **65** | **3** |
+| **Total**          | **65** | **4** |
