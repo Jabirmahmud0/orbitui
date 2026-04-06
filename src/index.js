@@ -1,6 +1,7 @@
 export const orbitUiVersion = '0.1.0';
 
 export { Button } from './components/Button';
+export { Checkbox } from './components/Checkbox';
 export { Input } from './components/Input';
 export { Textarea } from './components/Textarea';
 export { OrbitProvider, useOrbitContext } from './providers/OrbitProvider';
