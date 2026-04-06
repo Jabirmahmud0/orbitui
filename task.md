@@ -15,41 +15,41 @@
 ## Phase 1 — Project Scaffolding & Toolchain
 
 - [x] **Task 1.1**: Initialize repo — `package.json`, `.gitignore`, `LICENSE`, Vite + React setup  
-      *Commit: `chore: initialize project with React, Vite, and barebones structure`*
+       _Commit: `chore: initialize project with React, Vite, and barebones structure`_
 - [x] **Task 1.2**: Configure Tailwind CSS v4, PostCSS, and base styles  
-      *Commit: `build: configure Tailwind CSS v4 and base layer`*
-- [ ] **Task 1.3**: Configure ESLint, Prettier, and editor config  
-      *Commit: `chore: configure ESLint and Prettier for code quality`*
+       _Commit: `build: configure Tailwind CSS v4 and base layer`_
+- [x] **Task 1.3**: Configure ESLint, Prettier, and editor config  
+       _Commit: `chore: configure ESLint and Prettier for code quality`_
 - [ ] **Task 1.4**: Configure Vitest, Testing Library, and axe-core test setup  
-      *Commit: `test: set up Vitest and Testing Library with axe-core`*
+       _Commit: `test: set up Vitest and Testing Library with axe-core`_
 
 ---
 
 ## Phase 2 — Design Token Architecture
 
 - [ ] **Task 2.1**: Create base token files (colors, spacing, typography, radii, shadows)  
-      *Commit: `feat: define core design tokens (colors, spacing, typography)`*
+       _Commit: `feat: define core design tokens (colors, spacing, typography)`_
 - [ ] **Task 2.2**: Create semantic theme tokens (default light + dark)  
-      *Commit: `feat: generate light and dark semantic themes`*
+       _Commit: `feat: generate light and dark semantic themes`_
 - [ ] **Task 2.3**: Create brand override tokens (brand-a + brand-b)  
-      *Commit: `feat: implement multi-brand token overrides`*
+       _Commit: `feat: implement multi-brand token overrides`_
 - [ ] **Task 2.4**: Configure Style Dictionary — build pipeline + generated outputs  
-      *Commit: `build: setup Style Dictionary for token transformation`*
+       _Commit: `build: setup Style Dictionary for token transformation`_
 - [ ] **Task 2.5**: Wire generated CSS variables into Tailwind v4 config  
-      *Commit: `feat: integrate JS and CSS tokens into Tailwind config`*
+       _Commit: `feat: integrate JS and CSS tokens into Tailwind config`_
 
 ---
 
 ## Phase 3 — Core Infrastructure & Patterns
 
 - [ ] **Task 3.1**: Build utility functions — `cn()`, `composeRefs()`, `polymorphic.js`  
-      *Commit: `feat: add core utility functions (cn, composeRefs, polymorphic)`*
+       _Commit: `feat: add core utility functions (cn, composeRefs, polymorphic)`_
 - [ ] **Task 3.2**: Build `createSafeContext()` for compound component pattern  
-      *Commit: `feat: create safe context provider for compound components`*
+       _Commit: `feat: create safe context provider for compound components`_
 - [ ] **Task 3.3**: Build core hooks — `useControllableState`, `useId`, `useMediaQuery`  
-      *Commit: `feat: implement core custom React hooks`*
+       _Commit: `feat: implement core custom React hooks`_
 - [ ] **Task 3.4**: Build `OrbitProvider` — theme/brand context + CSS var injection  
-      *Commit: `feat: create OrbitProvider for theme and brand context injection`*
+       _Commit: `feat: create OrbitProvider for theme and brand context injection`_
 
 ---
 
@@ -58,158 +58,157 @@
 ### Tier 1 — Primitives (no dependencies on other components)
 
 - [ ] **Task 4.1**: Button — polymorphic, variants, loading, icons  
-      *Commit: `feat: implement Button component with polymorphic support`*
+       _Commit: `feat: implement Button component with polymorphic support`_
 - [ ] **Task 4.2**: Button — stories + unit tests + a11y tests  
-      *Commit: `test: add stories and unit tests for Button`*
+       _Commit: `test: add stories and unit tests for Button`_
 - [ ] **Task 4.3**: Input — controlled/uncontrolled, validation, addons  
-      *Commit: `feat: implement accessible Input component`*
+       _Commit: `feat: implement accessible Input component`_
 - [ ] **Task 4.4**: Input — stories + unit tests + a11y tests  
-      *Commit: `test: add stories and unit tests for Input`*
+       _Commit: `test: add stories and unit tests for Input`_
 - [ ] **Task 4.5**: Textarea — auto-resize, character count  
-      *Commit: `feat: implement auto-resizing Textarea component`*
+       _Commit: `feat: implement auto-resizing Textarea component`_
 - [ ] **Task 4.6**: Textarea — stories + unit tests + a11y tests  
-      *Commit: `test: add stories and unit tests for Textarea`*
+       _Commit: `test: add stories and unit tests for Textarea`_
 - [ ] **Task 4.7**: Checkbox — indeterminate, custom icons  
-      *Commit: `feat: implement custom accessible Checkbox`*
+       _Commit: `feat: implement custom accessible Checkbox`_
 - [ ] **Task 4.8**: Checkbox — stories + unit tests + a11y tests  
-      *Commit: `test: add stories and unit tests for Checkbox`*
+       _Commit: `test: add stories and unit tests for Checkbox`_
 
 ### Tier 2 — Compound Primitives
 
 - [ ] **Task 4.9**: RadioGroup — compound pattern, orientation  
-      *Commit: `feat: implement RadioGroup with compound architecture`*
+       _Commit: `feat: implement RadioGroup with compound architecture`_
 - [ ] **Task 4.10**: RadioGroup — stories + unit tests + a11y tests  
-      *Commit: `test: add stories and unit tests for RadioGroup`*
+       _Commit: `test: add stories and unit tests for RadioGroup`_
 - [ ] **Task 4.11**: Tooltip — placement, delay, arrow  
-      *Commit: `feat: implement accessible Tooltip component`*
+       _Commit: `feat: implement accessible Tooltip component`_
 - [ ] **Task 4.12**: Tooltip — stories + unit tests + a11y tests  
-      *Commit: `test: add stories and unit tests for Tooltip`*
+       _Commit: `test: add stories and unit tests for Tooltip`_
 - [ ] **Task 4.13**: Tabs — compound pattern, orientations, controlled/uncontrolled  
-      *Commit: `feat: implement Tabs component with compound architecture`*
+       _Commit: `feat: implement Tabs component with compound architecture`_
 - [ ] **Task 4.14**: Tabs — stories + unit tests + a11y tests  
-      *Commit: `test: add stories and tests for Tabs`*
+       _Commit: `test: add stories and tests for Tabs`_
 - [ ] **Task 4.15**: Breadcrumbs — compound, separator, collapse  
-      *Commit: `feat: implement semantic Breadcrumbs component`*
+       _Commit: `feat: implement semantic Breadcrumbs component`_
 - [ ] **Task 4.16**: Breadcrumbs — stories + unit tests + a11y tests  
-      *Commit: `test: add stories and unit tests for Breadcrumbs`*
+       _Commit: `test: add stories and unit tests for Breadcrumbs`_
 - [ ] **Task 4.17**: Pagination — controlled/uncontrolled, ellipsis  
-      *Commit: `feat: implement accessible Pagination component`*
+       _Commit: `feat: implement accessible Pagination component`_
 - [ ] **Task 4.18**: Pagination — stories + unit tests + a11y tests  
-      *Commit: `test: add stories and tests for Pagination`*
+       _Commit: `test: add stories and tests for Pagination`_
 
 ### Tier 3 — Overlay Components
 
 - [ ] **Task 4.19**: Modal/Dialog — compound, focus trap, scroll lock, sizes  
-      *Commit: `feat: implement Modal/Dialog with focus trapping`*
+       _Commit: `feat: implement Modal/Dialog with focus trapping`_
 - [ ] **Task 4.20**: Modal/Dialog — stories + unit tests + a11y tests  
-      *Commit: `test: add stories and unit tests for Modal`*
+       _Commit: `test: add stories and unit tests for Modal`_
 - [ ] **Task 4.21**: Dropdown — compound, sections, keyboard nav  
-      *Commit: `feat: implement accessible Dropdown menu component`*
+       _Commit: `feat: implement accessible Dropdown menu component`_
 - [ ] **Task 4.22**: Dropdown — stories + unit tests + a11y tests  
-      *Commit: `test: add stories and tests for Dropdown`*
+       _Commit: `test: add stories and tests for Dropdown`_
 - [ ] **Task 4.23**: Select — searchable, grouped, multi-select  
-      *Commit: `feat: implement advanced Select component`*
+       _Commit: `feat: implement advanced Select component`_
 - [ ] **Task 4.24**: Select — stories + unit tests + a11y tests  
-      *Commit: `test: add stories and tests for Select`*
+       _Commit: `test: add stories and tests for Select`_
 - [ ] **Task 4.25**: Toast/Notification — provider, imperative API, stacking  
-      *Commit: `feat: implement Toast notifications system`*
+       _Commit: `feat: implement Toast notifications system`_
 - [ ] **Task 4.26**: Toast/Notification — stories + unit tests + a11y tests  
-      *Commit: `test: add stories and unit tests for Toast`*
+       _Commit: `test: add stories and unit tests for Toast`_
 
 ### Tier 4 — Complex Components
 
 - [ ] **Task 4.27**: Combobox — type-ahead, async, virtualization  
-      *Commit: `feat: implement virtualized Combobox component`*
+       _Commit: `feat: implement virtualized Combobox component`_
 - [ ] **Task 4.28**: Combobox — stories + unit tests + a11y tests  
-      *Commit: `test: add stories and tests for Combobox`*
+       _Commit: `test: add stories and tests for Combobox`_
 - [ ] **Task 4.29**: DataTable — sorting, filtering, selection, virtualization  
-      *Commit: `feat: implement high-performance DataTable component`*
+       _Commit: `feat: implement high-performance DataTable component`_
 - [ ] **Task 4.30**: DataTable — stories + unit tests + a11y tests  
-      *Commit: `test: add stories and tests for DataTable`*
+       _Commit: `test: add stories and tests for DataTable`_
 - [ ] **Task 4.31**: CommandPalette — Cmd+K, grouped actions, search  
-      *Commit: `feat: implement CommandPalette interface`*
+       _Commit: `feat: implement CommandPalette interface`_
 - [ ] **Task 4.32**: CommandPalette — stories + unit tests + a11y tests  
-      *Commit: `test: add stories and tests for CommandPalette`*
+       _Commit: `test: add stories and tests for CommandPalette`_
 
 ---
 
 ## Phase 5 — Accessibility Audit & Hardening
 
 - [ ] **Task 5.1**: Full axe-core audit pass across all components — fix any violations  
-      *Commit: `fix: global accessibility improvements from axe-core audit`*
+       _Commit: `fix: global accessibility improvements from axe-core audit`_
 - [ ] **Task 5.2**: Keyboard navigation audit — verify every component works keyboard-only  
-      *Commit: `fix: refine keyboard navigation across library components`*
+       _Commit: `fix: refine keyboard navigation across library components`_
 - [ ] **Task 5.3**: Add Storybook a11y addon + configure global panel  
-      *Commit: `chore: integrate Storybook a11y addon`*
+       _Commit: `chore: integrate Storybook a11y addon`_
 
 ---
 
 ## Phase 6 — Storybook Documentation Site
 
 - [ ] **Task 6.1**: Configure Storybook 8 — main.js, preview.js, theme switcher  
-      *Commit: `docs: initialize Storybook and setup global previews`*
+       _Commit: `docs: initialize Storybook and setup global previews`_
 - [ ] **Task 6.2**: Write MDX docs — Introduction, Installation, Getting Started  
-      *Commit: `docs: write core documentation pages (Intro, Install)`*
+       _Commit: `docs: write core documentation pages (Intro, Install)`_
 - [ ] **Task 6.3**: Write MDX docs — Design Tokens reference with visual swatches  
-      *Commit: `docs: create design token reference page`*
+       _Commit: `docs: create design token reference page`_
 - [ ] **Task 6.4**: Write MDX docs — Theming guide + Accessibility guide  
-      *Commit: `docs: compose theming and accessibility guides`*
+       _Commit: `docs: compose theming and accessibility guides`_
 - [ ] **Task 6.5**: Enable autodocs + polish all component doc pages  
-      *Commit: `docs: refine component auto-documentation output`*
+       _Commit: `docs: refine component auto-documentation output`_
 
 ---
 
 ## Phase 7 — Build, Packaging & Bundle
 
 - [ ] **Task 7.1**: Configure Vite library mode — ESM + CJS dual output, preserveModules  
-      *Commit: `build: setup Vite for robust library module output`*
+       _Commit: `build: setup Vite for robust library module output`_
 - [ ] **Task 7.2**: Configure `package.json` exports map, peerDependencies, sideEffects  
-      *Commit: `chore: finalize package.json exports mapping and dependencies`*
+       _Commit: `chore: finalize package.json exports mapping and dependencies`_
 - [ ] **Task 7.3**: Build `src/index.js` barrel export — public API surface  
-      *Commit: `feat: expose library API via root barrel file`*
+       _Commit: `feat: expose library API via root barrel file`_
 - [ ] **Task 7.4**: Bundle size check script + budget enforcement  
-      *Commit: `build: implement automated bundle size budgeting scripts`*
+       _Commit: `build: implement automated bundle size budgeting scripts`_
 
 ---
 
 ## Phase 8 — CI/CD Pipeline
 
 - [ ] **Task 8.1**: GitHub Actions CI workflow — lint, test, build, a11y, bundle size  
-      *Commit: `ci: construct comprehensive quality gate workflow`*
+       _Commit: `ci: construct comprehensive quality gate workflow`_
 - [ ] **Task 8.2**: Commit linting — commitlint + husky + lint-staged pre-commit hooks  
-      *Commit: `ci: enforce conventional commits and staged linting checks`*
+       _Commit: `ci: enforce conventional commits and staged linting checks`_
 - [ ] **Task 8.3**: GitHub Actions release workflow — automated NPM publish + changelog  
-      *Commit: `ci: implement automated semantic release pipeline`*
+       _Commit: `ci: implement automated semantic release pipeline`_
 
 ---
 
 ## Phase 9 — Public Release
 
 - [ ] **Task 9.1**: Write README.md — badges, quick start, architecture, examples  
-      *Commit: `docs: write comprehensive public README`*
+       _Commit: `docs: write comprehensive public README`_
 - [ ] **Task 9.2**: Write CONTRIBUTING.md + CHANGELOG.md  
-      *Commit: `docs: add code of conduct, contributing, and changelog stubs`*
+       _Commit: `docs: add code of conduct, contributing, and changelog stubs`_
 - [ ] **Task 9.3**: Deploy Storybook to Vercel  
-      *Commit: `ci: setup Vercel deployment for Storybook instance`*
+       _Commit: `ci: setup Vercel deployment for Storybook instance`_
 - [ ] **Task 9.4**: Publish v1.0.0 to NPM  
-      *Commit: `release: publish orbitui@1.0.0 to NPM registry`*
+       _Commit: `release: publish orbitui@1.0.0 to NPM registry`_
 - [ ] **Task 9.5**: Final smoke test — install in clean project + verify tree-shaking  
-      *Commit: `test: verify final module output tree-shaking efficacy`*
+       _Commit: `test: verify final module output tree-shaking efficacy`_
 
 ---
 
 ## Progress Summary
 
-| Phase | Tasks | Done |
-|---|---|---|
-| 1. Scaffolding | 4 | 2 |
-| 2. Design Tokens | 5 | 0 |
-| 3. Core Infra | 4 | 0 |
-| 4. Components | 32 | 0 |
-| 5. A11y Audit | 3 | 0 |
-| 6. Storybook Docs | 5 | 0 |
-| 7. Build & Package | 4 | 0 |
-| 8. CI/CD | 3 | 0 |
-| 9. Release | 5 | 0 |
-| **Total** | **65** | **2** |
-
+| Phase              | Tasks  | Done  |
+| ------------------ | ------ | ----- |
+| 1. Scaffolding     | 4      | 3     |
+| 2. Design Tokens   | 5      | 0     |
+| 3. Core Infra      | 4      | 0     |
+| 4. Components      | 32     | 0     |
+| 5. A11y Audit      | 3      | 0     |
+| 6. Storybook Docs  | 5      | 0     |
+| 7. Build & Package | 4      | 0     |
+| 8. CI/CD           | 3      | 0     |
+| 9. Release         | 5      | 0     |
+| **Total**          | **65** | **3** |

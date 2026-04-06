@@ -13,8 +13,9 @@ export default function App() {
                 Tailwind v4 is now driving the library shell.
               </h1>
               <p className="max-w-2xl text-base leading-8 text-[color:var(--color-foreground-muted)] sm:text-lg">
-                This scaffold now runs on the Tailwind CSS v4 toolchain with a token-ready base layer,
-                Vite plugin integration, and a preview surface that can evolve into the full design system.
+                This scaffold now runs on the Tailwind CSS v4 toolchain with a token-ready base
+                layer, Vite plugin integration, and a preview surface that can evolve into the full
+                design system.
               </p>
             </div>
             <div className="flex flex-wrap gap-3">

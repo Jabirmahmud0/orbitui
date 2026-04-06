@@ -1,0 +1,6 @@
+dist
+coverage
+node_modules
+package-lock.json
+implementation_plan.md
+OrbitUI_ Enterprise Design System & Component Library - Enhanced React (JS_JSX) Edition.md
