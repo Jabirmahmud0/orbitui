@@ -101,7 +101,8 @@
     "format:check": "prettier . --check",
     "storybook": "storybook dev -p 6006",
     "storybook:build": "storybook build",
-    "check:bundle": "node scripts/check-bundle-size.js"
+    "check:bundle": "node scripts/check-bundle-size.js",
+    "release": "semantic-release"
   },
   "lint-staged": {
     "*.{js,jsx}": [
@@ -129,6 +130,10 @@
     "@commitlint/cli": "^20.5.0",
     "@commitlint/config-conventional": "^20.5.0",
     "@eslint/js": "^9.39.4",
+    "@semantic-release/changelog": "^6.0.3",
+    "@semantic-release/git": "^10.0.1",
+    "@semantic-release/github": "^12.0.6",
+    "@semantic-release/npm": "^13.1.5",
     "@storybook/addon-a11y": "^10.3.4",
     "@storybook/addon-docs": "^10.3.4",
     "@storybook/react-vite": "^10.3.4",
@@ -153,6 +158,7 @@
     "prettier": "^3.8.1",
     "react": "^19.2.4",
     "react-dom": "^19.2.4",
+    "semantic-release": "^25.0.3",
     "storybook": "^10.3.4",
     "style-dictionary": "^5.4.0",
     "tailwindcss": "^4.2.2",
@@ -164,5 +170,16 @@
     "clsx": "^2.1.1",
     "react-aria": "^3.47.0",
     "tailwind-merge": "^3.5.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Jabirmahmud0/orbitui.git"
+  },
+  "homepage": "https://github.com/Jabirmahmud0/orbitui#readme",
+  "bugs": {
+    "url": "https://github.com/Jabirmahmud0/orbitui/issues"
+  },
+  "publishConfig": {
+    "access": "public"
   }
 }

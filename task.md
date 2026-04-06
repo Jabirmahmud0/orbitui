@@ -178,7 +178,7 @@
        _Commit: `ci: construct comprehensive quality gate workflow`_
 - [x] **Task 8.2**: Commit linting — commitlint + husky + lint-staged pre-commit hooks  
        _Commit: `ci: enforce conventional commits and staged linting checks`_
-- [ ] **Task 8.3**: GitHub Actions release workflow — automated NPM publish + changelog  
+- [x] **Task 8.3**: GitHub Actions release workflow — automated NPM publish + changelog  
        _Commit: `ci: implement automated semantic release pipeline`_
 
 ---
@@ -209,6 +209,6 @@
 | 5. A11y Audit      | 3      | 3      |
 | 6. Storybook Docs  | 5      | 5      |
 | 7. Build & Package | 4      | 4      |
-| 8. CI/CD           | 3      | 2      |
+| 8. CI/CD           | 3      | 3      |
 | 9. Release         | 5      | 0      |
-| **Total**          | **65** | **45** |
+| **Total**          | **65** | **46** |
