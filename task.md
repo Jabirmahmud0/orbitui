@@ -42,7 +42,7 @@
 
 ## Phase 3 — Core Infrastructure & Patterns
 
-- [ ] **Task 3.1**: Build utility functions — `cn()`, `composeRefs()`, `polymorphic.js`  
+- [x] **Task 3.1**: Build utility functions — `cn()`, `composeRefs()`, `polymorphic.js`  
        _Commit: `feat: add core utility functions (cn, composeRefs, polymorphic)`_
 - [ ] **Task 3.2**: Build `createSafeContext()` for compound component pattern  
        _Commit: `feat: create safe context provider for compound components`_
@@ -204,11 +204,11 @@
 | ------------------ | ------ | ----- |
 | 1. Scaffolding     | 4      | 4     |
 | 2. Design Tokens   | 5      | 5     |
-| 3. Core Infra      | 4      | 0     |
+| 3. Core Infra      | 4      | 1     |
 | 4. Components      | 32     | 0     |
 | 5. A11y Audit      | 3      | 0     |
 | 6. Storybook Docs  | 5      | 0     |
 | 7. Build & Package | 4      | 0     |
 | 8. CI/CD           | 3      | 0     |
 | 9. Release         | 5      | 0     |
-| **Total**          | **65** | **9** |
+| **Total**          | **65** | **10** |
