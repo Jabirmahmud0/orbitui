@@ -111,7 +111,7 @@
        _Commit: `feat: implement advanced Select component`_
 - [x] **Task 4.24**: Select — stories + unit tests + a11y tests  
        _Commit: `test: add stories and tests for Select`_
-- [ ] **Task 4.25**: Toast/Notification — provider, imperative API, stacking  
+- [x] **Task 4.25**: Toast/Notification — provider, imperative API, stacking  
        _Commit: `feat: implement Toast notifications system`_
 - [ ] **Task 4.26**: Toast/Notification — stories + unit tests + a11y tests  
        _Commit: `test: add stories and unit tests for Toast`_
@@ -205,13 +205,14 @@
 | 1. Scaffolding     | 4      | 4      |
 | 2. Design Tokens   | 5      | 5      |
 | 3. Core Infra      | 4      | 4      |
-| 4. Components      | 32     | 24     |
+| 4. Components      | 32     | 25     |
 | 5. A11y Audit      | 3      | 3      |
 | 6. Storybook Docs  | 5      | 5      |
 | 7. Build & Package | 4      | 4      |
 | 8. CI/CD           | 3      | 3      |
 | 9. Release         | 5      | 3      |
-| **Total**          | **65** | **55** |
+| **Total**          | **65** | **56** |
+
 
 
 

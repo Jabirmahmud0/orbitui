@@ -31,6 +31,7 @@ export { RadioGroup, RadioGroupItem } from './components/RadioGroup';
 export { Select } from './components/Select';
 export { Tabs, TabsContent, TabsList, TabsTrigger } from './components/Tabs';
 export { Textarea } from './components/Textarea';
+export { ToastProvider, ToastViewport, toast, useToast } from './components/Toast';
 export { Tooltip } from './components/Tooltip';
 
 // Providers

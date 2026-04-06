@@ -55,6 +55,10 @@
       "import": "./dist/components/Textarea/Textarea.js",
       "require": "./dist/components/Textarea/Textarea.cjs"
     },
+    "./components/Toast": {
+      "import": "./dist/components/Toast/Toast.js",
+      "require": "./dist/components/Toast/Toast.cjs"
+    },
     "./components/Tooltip": {
       "import": "./dist/components/Tooltip/Tooltip.js",
       "require": "./dist/components/Tooltip/Tooltip.cjs"
@@ -195,4 +199,5 @@
     "access": "public"
   }
 }
+
 
