@@ -65,7 +65,7 @@ export const parameters = {
   layout: 'centered',
   options: {
     storySort: {
-      order: ['Introduction', 'Installation', 'Getting Started', 'Components'],
+      order: ['Introduction', 'Installation', 'Getting Started', 'Design Tokens', 'Components'],
     },
   },
 };

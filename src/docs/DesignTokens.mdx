@@ -1,0 +1,99 @@
+import { Meta } from '@storybook/addon-docs/blocks';
+
+import tokens from '../tokens/generated/tokens';
+import {
+  BrandSection,
+  ColorScaleSection,
+  MeasureScaleSection,
+  SemanticThemeSection,
+  ShadowSection,
+  TypographySection,
+} from './TokenDocs';
+
+<Meta title="Design Tokens" />
+
+# Design Tokens
+
+OrbitUI uses generated tokens as the source of truth for color, type, spacing, radius, shadow, theme, and brand behavior. This page reflects the built output in `src/tokens/generated/tokens.js`.
+
+## Base Palettes
+
+<ColorScaleSection
+  title="Primary"
+  description="The main interactive color scale used as the source for semantic action roles and brand variants."
+  colors={tokens.color.primary}
+/>
+
+<ColorScaleSection
+  title="Neutral"
+  description="The neutral scale drives surfaces, borders, and readable foreground values across both themes."
+  colors={tokens.color.neutral}
+/>
+
+<ColorScaleSection
+  title="Status"
+  description="Feedback colors are defined as independent ramps so semantic success, warning, danger, and info roles can stay stable."
+  colors={{
+    success: tokens.color.success,
+    warning: tokens.color.warning,
+    danger: tokens.color.danger,
+    info: tokens.color.info,
+  }}
+/>
+
+<SemanticThemeSection
+  title="Semantic Theme: Default"
+  description="Default semantic tokens map the base scales into UI roles for light surfaces and standard application chrome."
+  tokensByGroup={tokens.theme.default.semantic.color}
+/>
+
+<SemanticThemeSection
+  title="Semantic Theme: Dark"
+  description="Dark semantic tokens preserve the same roles while changing surface, border, and emphasis values for low-light interfaces."
+  tokensByGroup={tokens.theme.dark.semantic.color}
+/>
+
+<TypographySection
+  title="Typography"
+  description="Typography tokens define the library type scale, primary families, and tracking values used throughout OrbitUI."
+  typography={tokens.typography}
+/>
+
+<MeasureScaleSection
+  title="Spacing"
+  description="Spacing tokens are structured as a compact scale intended for layout rhythm, control density, and component internals."
+  items={tokens.spacing}
+  preview={(value) => (
+    <div
+      style={{
+        width: value,
+        minWidth: '1px',
+        maxWidth: '100%',
+        height: '0.875rem',
+        borderRadius: '999px',
+        background: 'var(--color-action-primary)',
+      }}
+    />
+  )}
+/>
+
+<MeasureScaleSection
+  title="Radii"
+  description="Corner radius tokens define the shape language for controls, cards, popovers, and badges."
+  items={tokens.radius}
+  preview={(value) => (
+    <div
+      style={{
+        width: '5rem',
+        height: '3rem',
+        borderRadius: value,
+        border: '1px solid var(--color-border-default)',
+        background: 'var(--color-background-subtle)',
+      }}
+    />
+  )}
+/>
+
+<ShadowSection shadows={tokens.shadow} />
+
+<BrandSection brands={tokens.brand} />
