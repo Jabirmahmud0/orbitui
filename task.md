@@ -191,7 +191,7 @@
        _Commit: `docs: add code of conduct, contributing, and changelog stubs`_
 - [x] **Task 9.3**: Deploy Storybook to Vercel  
        _Commit: `ci: setup Vercel deployment for Storybook instance`_
-- [ ] **Task 9.4**: Publish v1.0.0 to NPM  
+- [x] **Task 9.4**: Publish v1.0.0 to NPM  
        _Commit: `release: publish orbitui@1.0.0 to NPM registry`_
 - [x] **Task 9.5**: Final smoke test — install in clean project + verify tree-shaking  
        _Commit: `test: verify final module output tree-shaking efficacy`_

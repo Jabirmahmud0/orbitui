@@ -43,7 +43,7 @@ function writeConsumerProject(tarballName) {
         private: true,
         type: 'module',
         dependencies: {
-          '@orbitui/react': `file:../pack/${tarballName}`,
+          '@jabir0/orbitui-react': `file:../pack/${tarballName}`,
         },
       },
       null,
@@ -59,7 +59,7 @@ function writeConsumerProject(tarballName) {
   mkdirSync(join(consumerDir, 'src'), { recursive: true });
   writeFileSync(
     join(consumerDir, 'src', 'main.jsx'),
-    "import { createRoot } from 'react-dom/client';\nimport { Button } from '@orbitui/react';\n\nfunction App() {\n  return (\n    <main>\n      <Button>Smoke Test</Button>\n    </main>\n  );\n}\n\ncreateRoot(document.getElementById('root')).render(<App />);\n",
+    "import { createRoot } from 'react-dom/client';\nimport { Button } from '@jabir0/orbitui-react';\n\nfunction App() {\n  return (\n    <main>\n      <Button>Smoke Test</Button>\n    </main>\n  );\n}\n\ncreateRoot(document.getElementById('root')).render(<App />);\n",
   );
 }
 
@@ -110,3 +110,5 @@ verifyTreeShaking();
 
 rmSync(tmpDir, { force: true, recursive: true });
 console.log('Smoke package test passed.');
+
+

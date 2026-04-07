@@ -2,7 +2,7 @@
 
 [![CI](https://github.com/Jabirmahmud0/orbitui/actions/workflows/ci.yml/badge.svg)](https://github.com/Jabirmahmud0/orbitui/actions/workflows/ci.yml)
 [![Release](https://github.com/Jabirmahmud0/orbitui/actions/workflows/release.yml/badge.svg)](https://github.com/Jabirmahmud0/orbitui/actions/workflows/release.yml)
-[![npm version](https://img.shields.io/npm/v/%40orbitui%2Freact)](https://www.npmjs.com/package/@orbitui/react)
+[![npm version](https://img.shields.io/npm/v/%40jabir0%2Forbitui-react)](https://www.npmjs.com/package/@jabir0/orbitui-react)
 [![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE)
 
 OrbitUI is an enterprise-ready React component library and design system focused on accessible primitives, multi-brand theming, and predictable packaging for modern app teams.
@@ -18,7 +18,7 @@ OrbitUI is an enterprise-ready React component library and design system focused
 ## Install
 
 ```bash
-npm install @orbitui/react react react-dom
+npm install @jabir0/orbitui-react react react-dom
 ```
 
 Peer requirements:
@@ -30,7 +30,7 @@ Peer requirements:
 
 ```jsx
 import React from 'react';
-import { Button, Input, OrbitProvider } from '@orbitui/react';
+import { Button, Input, OrbitProvider } from '@jabir0/orbitui-react';
 
 export function App() {
   return (
@@ -46,37 +46,56 @@ export function App() {
 
 ## Available Components
 
-Current root exports include:
+### Forms
+
+- `Input`
+- `Textarea`
+- `Checkbox`
+- `RadioGroup`
+- `Select`
+- `Combobox`
+
+### Navigation
 
 - `Breadcrumbs`
-- `Button`
-- `Checkbox`
-- `Input`
 - `Pagination`
-- `RadioGroup`
 - `Tabs`
-- `Textarea`
+- `Dropdown`
+
+### Feedback / Overlay
+
 - `Tooltip`
+- `Toast`
+- `Modal`
+- `CommandPalette`
+
+### Data Display
+
+- `DataTable`
+
+### Core
+
+- `Button`
 - `OrbitProvider`
 - `orbitTokens`
 
 Utility and hook subpath exports are also available:
 
-- `@orbitui/react/hooks/useControllableState`
-- `@orbitui/react/hooks/useId`
-- `@orbitui/react/hooks/useMediaQuery`
-- `@orbitui/react/utils/cn`
-- `@orbitui/react/utils/composeRefs`
-- `@orbitui/react/utils/createContext`
-- `@orbitui/react/utils/polymorphic`
-- `@orbitui/react/providers/OrbitProvider`
+- `@jabir0/orbitui-react/hooks/useControllableState`
+- `@jabir0/orbitui-react/hooks/useId`
+- `@jabir0/orbitui-react/hooks/useMediaQuery`
+- `@jabir0/orbitui-react/utils/cn`
+- `@jabir0/orbitui-react/utils/composeRefs`
+- `@jabir0/orbitui-react/utils/createContext`
+- `@jabir0/orbitui-react/utils/polymorphic`
+- `@jabir0/orbitui-react/providers/OrbitProvider`
 
 ## Theming
 
 OrbitUI ships with generated design tokens and runtime CSS variables. `OrbitProvider` controls active theme and brand context for the library.
 
 ```jsx
-import { OrbitProvider } from '@orbitui/react';
+import { OrbitProvider } from '@jabir0/orbitui-react';
 
 export function Root() {
   return (
@@ -137,7 +156,7 @@ The published package is set up for application and library consumers:
 - dual ESM and CJS entry points
 - subpath exports for components, hooks, providers, and utilities
 - CSS files marked as side effects so styles are not tree-shaken away
-- public scoped npm publishing through `@orbitui/react`
+- public scoped npm publishing through `@jabir0/orbitui-react`
 
 ## Documentation
 
