@@ -41,8 +41,8 @@ export const decorators = [
       <OrbitProvider theme={theme} brand={brand}>
         <div
           style={{
-            minHeight: '100vh',
-            padding: '24px',
+            padding: '20px',
+            width: '100%',
             background: 'var(--color-background-page)',
             color: 'var(--color-foreground-primary)',
           }}
@@ -67,7 +67,7 @@ export const parameters = {
       state: 'hidden',
     },
   },
-  layout: 'centered',
+  layout: 'padded',
   options: {
     storySort: {
       order: [
@@ -82,3 +82,5 @@ export const parameters = {
     },
   },
 };
+
+
