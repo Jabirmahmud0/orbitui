@@ -41,7 +41,12 @@ function resolveGitExecutable() {
   return null;
 }
 
-if (process.env.HUSKY === '0' || !existsSync('.git')) {
+if (
+  process.env.HUSKY === '0' ||
+  process.env.CI === 'true' ||
+  process.env.VERCEL === '1' ||
+  !existsSync('.git')
+) {
   process.exit(0);
 }
 
@@ -79,3 +84,4 @@ for (const hookName of hookNames) {
 }
 
 writeFileSync(path.join(internalDirectory, 'husky.sh'), 'echo "husky - DEPRECATED\\n"\n');
+
